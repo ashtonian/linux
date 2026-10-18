@@ -1,0 +1,22 @@
+[
+  {
+    "commit": "0a5a94648627a438067fc8a6dd178187ceb112fb",
+    "url": "https://github.com/torvalds/linux/commit/0a5a94648627a438067fc8a6dd178187ceb112fb.patch",
+    "sha256": "476277fccc6272b3b3a29305b658efd964b559a238b429c751bd1175f2d72a5f"
+  },
+  {
+    "commit": "bf881dd20062db5e951a0d0703cb476df8c9fdee",
+    "url": "https://github.com/torvalds/linux/commit/bf881dd20062db5e951a0d0703cb476df8c9fdee.patch",
+    "sha256": "dd1fb1a21342cda0191b0e75aa6febd7dc629faa2f1bf3a2d274325784935cbd"
+  },
+  {
+    "url": "https://patchew.org/linux/20260831005117.142713-1-gerencia@idkmanager.com/mbox",
+    "sha256": "ab3648f0ea1acf3beba9bbcc11aea4da6dc9c98d588104918167d5d8e7f22d25",
+    "message_id": "<20260831005117.142713-1-gerencia@idkmanager.com>"
+  },
+  {
+    "url": "https://patchew.org/linux/179013720383.9364.11263428288753603011@idkmanager.com/mbox",
+    "sha256": "c2791ff9d7a3f7b40e7e96cd518f732d65b0ffea38ea923d0d6c5ed23e197c8b",
+    "message_id": "<179013720383.9364.11263428288753603011@idkmanager.com>"
+  }
+]

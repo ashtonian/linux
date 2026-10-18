@@ -1,0 +1,31 @@
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 253: observe_passthru(&req, 1U << 8) == (expected[i] < 5 ? expected[i] : 5)
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 251: observe_identify(&req) == expected[i]
+FAIL line 252: observe_passthru(&req, 1U << 18) == expected[i]
+FAIL line 262: observe_identify(&req) == 8
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 278: port.mdts == stored[i]
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 278: port.mdts == stored[i]
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 278: port.mdts == stored[i]
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 278: port.mdts == stored[i]
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 276: nvmet_param_mdts_store(&item, valid[i], strlen(valid[i])) == (ssize_t)strlen(valid[i])
+FAIL line 282: nvmet_param_mdts_store(&item, "10", 2) == -EACCES
+154 checks; 30 failures (isolated source functions, stubbed kernel APIs)

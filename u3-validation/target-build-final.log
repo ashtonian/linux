@@ -1,0 +1,35 @@
+make[1]: Entering directory '/work/output'
+  GEN     Makefile
+  DESCEND objtool
+  DESCEND bpf/resolve_btfids
+  INSTALL libsubcmd_headers
+  CALL    /work/linux/scripts/checksyscalls.sh
+  INSTALL libsubcmd_headers
+  CC [M]  drivers/nvme/target/configfs.o
+make[1]: Leaving directory '/work/output'
+make[1]: Entering directory '/work/output'
+  GEN     Makefile
+  DESCEND objtool
+  DESCEND bpf/resolve_btfids
+  INSTALL libsubcmd_headers
+  CALL    /work/linux/scripts/checksyscalls.sh
+  INSTALL libsubcmd_headers
+  CC [M]  drivers/nvme/target/fabrics-cmd.o
+  CC [M]  drivers/nvme/target/discovery.o
+  CC [M]  drivers/nvme/target/io-cmd-file.o
+  CC [M]  drivers/nvme/target/io-cmd-bdev.o
+  CC [M]  drivers/nvme/target/debugfs.o
+  CC [M]  drivers/nvme/target/pr.o
+  CC [M]  drivers/nvme/target/fabrics-cmd-auth.o
+  CC [M]  drivers/nvme/target/auth.o
+  CC [M]  drivers/nvme/target/trace.o
+  CC [M]  drivers/nvme/target/loop.o
+  LD [M]  drivers/nvme/target/nvmet-rdma.o
+  CC [M]  drivers/nvme/target/fc.o
+  CC [M]  drivers/nvme/target/fcloop.o
+  LD [M]  drivers/nvme/target/nvmet-tcp.o
+  LD [M]  drivers/nvme/target/nvmet.o
+  LD [M]  drivers/nvme/target/nvme-loop.o
+  LD [M]  drivers/nvme/target/nvme-fcloop.o
+  LD [M]  drivers/nvme/target/nvmet-fc.o
+make[1]: Leaving directory '/work/output'

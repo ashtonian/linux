@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-10-18T08:38:21.726038+00:00",
+  "base_sha": "e43b65255bec4614c14447eb6152711e3e6e8124",
+  "head_sha": "9d9d9d7bd620d4c8ef6358e163ca78949e11c2f2",
+  "tree_sha": "1fcc3c15535108f29d430f22e7546a55c5065130",
+  "branch": "work/u3-upstream-aligned",
+  "fork": "ashtonian/linux",
+  "preserved_branch": "work/u3-effective-mdts",
+  "preserved_head": "e362859b6544189bef80e6582556946f7a5b0ea6",
+  "base_image": "ubuntu@sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+  "architecture": "x86_64 cross-compile from aarch64 Linux",
+  "config_sha256": "8d63c6372458a5c3e982d223694fe36a77b103308cc1852100cedfa488aab3fc",
+  "source_sha256": {
+    "drivers/nvme/target/admin-cmd.c": "0d9c56358f2baa55550b86685c4288dd4de469e3af1b8aad753bf4ce53506436",
+    "drivers/nvme/target/configfs.c": "f288bec0a7b98baa637e53f5588bfe160070e1262549c09330a6515cac478ae9",
+    "drivers/nvme/target/core.c": "cf70cf414638029c6870757ad30dbb89716a0567345d511a8f3d24e0d997e989",
+    "drivers/nvme/target/nvmet.h": "a85814fbc29eb89ae56541aa65fe4f1514cc060eb5417c59c855093101f0ff6f",
+    "drivers/nvme/target/passthru.c": "28ce25a7b206fc8cc4d3fff49235e4fa22228dc1e9afc8b09e126ed168755eff",
+    "drivers/nvme/target/tcp.c": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+    "drivers/nvme/target/zns.c": "2ad25834d3da790afbda6ae62e8a4cbfd65d11f22760fe4c466966e5cce84c38"
+  },
+  "patch_sha256": "bf895c4e02838c555bb7f44732407823e986ebf13429051299adab0a8c2dfb1f",
+  "checks": {
+    "mdts_configuration_allocation": "PASS: 154 assertions under Linux ASan/UBSan",
+    "independent_pdu_constant": "PASS: 154 assertions under Linux ASan/UBSan with isolated PDU constant reduced to 1 MiB",
+    "vectors_digests_cleanup": "PASS: 100 spans, 927 assertions under Linux ASan/UBSan",
+    "baseline_negative_control": "EXPECTED FAIL: 30 of 154 assertions against unchanged base",
+    "seven_target_objects": "PASS: W=1, x86_64 cross compilation; target-build.log",
+    "target_directory": "PASS: W=1, configured target directory compilation and relocatable linking; target-build-final.log",
+    "checkpatch_strict": "PASS: zero errors/warnings/checks on cumulative diff",
+    "local_signatures": "PASS: all eight commits"
+  },
+  "assertions_passed": 1235,
+  "limits": {
+    "tcp_advertisement_max_mib": 1,
+    "command_allocation_max_mib": 4,
+    "h2c_pdu_max_mib": 4,
+    "param_mdts": "0..255; nonzero settings can lower the transport advertisement; active-port writes fail"
+  },
+  "not_run": [
+    "full kernel/image packaging",
+    "module modpost/install/load",
+    "boot",
+    "real configfs updates",
+    "API/migration integration",
+    "NVMe command tracing",
+    "live integrity/pressure/durability",
+    "fencing",
+    "network fragmentation/digest integration",
+    "accelerated kernel CRC and TLS qualification",
+    "aggregate memory-budget qualification"
+  ],
+  "limitations": "Extracted source with stubbed kernel APIs and reference CRC32C; no kernel/configfs/network/runtime proof. Advertisement is not per-command enforcement below the 4 MiB allocation guard.",
+  "upstream_pr_opened": false,
+  "provenance": "Two merged generic MDTS backports; Alfonso Kuen MDTS v3 and size cleanup v2 preserve authorship and review tags. Cleanup sign-off email restored from author header per review; changelog removed from commit message. Generic store declaration alignment corrected. No altered policy inherits upstream review tags."
+}

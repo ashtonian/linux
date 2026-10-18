@@ -1,0 +1,17 @@
+{
+  "revision": "working-tree",
+  "source_sha256": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+  "compile_command": [
+    "cc",
+    "-std=gnu11",
+    "-Wall",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "/work/upstream-aligned/fragments/harness.c",
+    "-o",
+    "/work/upstream-aligned/fragments/harness"
+  ],
+  "compiler": "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "limitations": "Kernel iterator, allocation and scatterlist APIs are stubbed; CRC32C uses a bytewise reference implementation. No sockets, kernel CRC implementation, concurrency or live I/O."
+}

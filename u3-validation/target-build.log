@@ -1,0 +1,15 @@
+make[1]: Entering directory '/work/output'
+  GEN     Makefile
+  DESCEND bpf/resolve_btfids
+  DESCEND objtool
+  INSTALL libsubcmd_headers
+  INSTALL libsubcmd_headers
+  CALL    /work/linux/scripts/checksyscalls.sh
+  CC [M]  drivers/nvme/target/core.o
+  CC [M]  drivers/nvme/target/configfs.o
+  CC [M]  drivers/nvme/target/admin-cmd.o
+  CC [M]  drivers/nvme/target/tcp.o
+  CC [M]  drivers/nvme/target/passthru.o
+  CC [M]  drivers/nvme/target/zns.o
+  CC [M]  drivers/nvme/target/rdma.o
+make[1]: Leaving directory '/work/output'

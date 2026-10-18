@@ -1,0 +1,24 @@
+{
+  "revision": "working-tree",
+  "alter_pdu_limit": true,
+  "compiler": "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compile_command": [
+    "cc",
+    "-std=gnu11",
+    "-Wall",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "/work/upstream-aligned/pdu-independent/harness.c",
+    "-o",
+    "/work/upstream-aligned/pdu-independent/harness"
+  ],
+  "source_sha256": {
+    "tcp.c": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+    "nvmet.h": "a85814fbc29eb89ae56541aa65fe4f1514cc060eb5417c59c855093101f0ff6f",
+    "admin-cmd.c": "0d9c56358f2baa55550b86685c4288dd4de469e3af1b8aad753bf4ce53506436",
+    "configfs.c": "f288bec0a7b98baa637e53f5588bfe160070e1262549c09330a6515cac478ae9",
+    "passthru.c": "28ce25a7b206fc8cc4d3fff49235e4fa22228dc1e9afc8b09e126ed168755eff"
+  },
+  "limitations": "Isolated functions and MDTS source fragments; kernel APIs are stubbed. No kernel/configfs/transport/storage/runtime qualification."
+}
