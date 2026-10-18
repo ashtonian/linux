@@ -23,7 +23,7 @@
 #include "nvmet.h"
 
 #define NVMET_TCP_DEF_INLINE_DATA_SIZE	(4 * PAGE_SIZE)
-#define NVMET_TCP_MAXH2CDATA		0x400000 /* 16M arbitrary limit */
+#define NVMET_TCP_MAXH2CDATA		0x400000 /* 4 MiB */
 #define NVMET_TCP_BACKLOG 128
 
 static int param_store_val(const char *str, int *val, int min, int max)
@@ -2217,10 +2217,21 @@ static void nvmet_tcp_delete_ctrl(struct nvmet_ctrl *ctrl)
 	mutex_unlock(&nvmet_tcp_queue_mutex);
 }
 
+static u8 nvmet_tcp_get_mdts(const struct nvmet_ctrl *ctrl)
+{
+	return ilog2(NVMET_TCP_MAXH2CDATA) -
+		(12 + NVME_CAP_MPSMIN(ctrl->cap));
+}
+
 static u16 nvmet_tcp_install_queue(struct nvmet_sq *sq)
 {
 	struct nvmet_tcp_queue *queue =
 		container_of(sq, struct nvmet_tcp_queue, nvme_sq);
+
+	/* MDTS zero cannot encode a one-page transport limit. */
+	if (12 + NVME_CAP_MPSMIN(sq->ctrl->cap) >=
+	    ilog2(NVMET_TCP_MAXH2CDATA))
+		return NVME_SC_CONNECT_INVALID_PARAM | NVME_STATUS_DNR;
 
 	if (sq->qid == 0) {
 		struct nvmet_tcp_queue *q;
@@ -2286,6 +2297,7 @@ static const struct nvmet_fabrics_ops nvmet_tcp_ops = {
 	.install_queue		= nvmet_tcp_install_queue,
 	.disc_traddr		= nvmet_tcp_disc_port_addr,
 	.host_traddr		= nvmet_tcp_host_port_addr,
+	.get_mdts		= nvmet_tcp_get_mdts,
 };
 
 static int __init nvmet_tcp_init(void)
