@@ -23,7 +23,12 @@
 #include "nvmet.h"
 
 #define NVMET_TCP_DEF_INLINE_DATA_SIZE	(4 * PAGE_SIZE)
-#define NVMET_TCP_MAXH2CDATA		0x400000 /* 4 MiB */
+#define NVMET_TCP_MAXH2CDATA		0x400000 /* 4 MiB per H2CData PDU */
+/*
+ * Preserve the 4 MiB allocation bound from 4a3f00262a04, originally
+ * borrowed from MAXH2CDATA, to cap memory held by incomplete commands.
+ */
+#define NVMET_TCP_MAX_CMD_DATA		0x400000
 #define NVMET_TCP_BACKLOG 128
 
 static int param_store_val(const char *str, int *val, int min, int max)
@@ -434,17 +439,8 @@ static int nvmet_tcp_map_data(struct nvmet_tcp_cmd *cmd)
 	if (!len)
 		return 0;
 
-	/*
-	 * inline_data_size only bounds the in-capsule (type 0x01) SGL
-	 * descriptor below. A non-inline transport SGL data-block
-	 * descriptor skips that check entirely and would otherwise reach
-	 * sgl_alloc() with an attacker-controlled len of up to 4 GiB,
-	 * pinning that much kernel memory for a command that may never
-	 * complete. Bound every descriptor type here, before allocating
-	 * anything, using the same ceiling this file already applies to
-	 * per-PDU H2C data.
-	 */
-	if (len > NVMET_TCP_MAXH2CDATA)
+	/* Bound every SGL type before allocating; inline limits are separate. */
+	if (len > NVMET_TCP_MAX_CMD_DATA)
 		return NVME_SC_SGL_INVALID_DATA | NVME_STATUS_DNR;
 
 	if (sgl->type == ((NVME_SGL_FMT_DATA_DESC << 4) |
@@ -2219,7 +2215,7 @@ static void nvmet_tcp_delete_ctrl(struct nvmet_ctrl *ctrl)
 
 static u8 nvmet_tcp_get_mdts(const struct nvmet_ctrl *ctrl)
 {
-	return ilog2(NVMET_TCP_MAXH2CDATA) -
+	return ilog2(NVMET_TCP_MAX_CMD_DATA) -
 		(12 + NVME_CAP_MPSMIN(ctrl->cap));
 }
 
@@ -2230,7 +2226,7 @@ static u16 nvmet_tcp_install_queue(struct nvmet_sq *sq)
 
 	/* MDTS zero cannot encode a one-page transport limit. */
 	if (12 + NVME_CAP_MPSMIN(sq->ctrl->cap) >=
-	    ilog2(NVMET_TCP_MAXH2CDATA))
+	    ilog2(NVMET_TCP_MAX_CMD_DATA))
 		return NVME_SC_CONNECT_INVALID_PARAM | NVME_STATUS_DNR;
 
 	if (sq->qid == 0) {

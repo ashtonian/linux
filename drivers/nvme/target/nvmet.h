@@ -762,7 +762,6 @@ static inline bool nvmet_is_pci_ctrl(struct nvmet_ctrl *ctrl)
 	return ctrl->port->disc_addr.trtype == NVMF_TRTYPE_PCI;
 }
 
-/* Limit MDTS according to port config or transport capability */
 static inline u8 nvmet_ctrl_mdts(struct nvmet_req *req)
 {
 	struct nvmet_ctrl *ctrl = req->sq->ctrl;
