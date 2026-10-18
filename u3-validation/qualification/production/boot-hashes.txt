@@ -1,0 +1,3 @@
+3a0cf2e77a53d8ac85982a6b67d089d58f8bea9e5e0586cae579d041cbc2c829  /work/linux-image-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+f53a0de1cea2a68f02324345cc1d66b2599fd51667942f8f0e111beef5ba8350  /work/guest-root/boot/vmlinuz-6.18.55-production+truenas
+65d8aef322159008d48773b4d29e5568a8e811f3869dabfba569c362bfa31c53  /work/qualification/production/initramfs.gz

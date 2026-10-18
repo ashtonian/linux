@@ -1,0 +1,42 @@
+{
+  "kernel_changes_required": false,
+  "environment_corrections": [
+    {
+      "stage": "package preparation",
+      "problem": "Generated Debian certificate path missing",
+      "resolution": "Run archprepare and scripts/package/mkdebian before bindeb-pkg."
+    },
+    {
+      "stage": "cross build",
+      "problem": "Target-only global pkg-config library selection broke the native sign-file link",
+      "resolution": "Keep native library resolution for host tools; use cross compiler target library paths."
+    },
+    {
+      "stage": "perf prebuild",
+      "problem": "Default python command absent",
+      "resolution": "Install python-is-python3 and export PYTHON=python3, as production CI does."
+    },
+    {
+      "stage": "initial VM boots",
+      "problem": "BIOS EDD disk probing stalled before kernel console initialization",
+      "resolution": "Retain serial/BIOS diagnostics and add edd=off."
+    },
+    {
+      "stage": "guest init",
+      "problem": "Raw Debian package extraction replaced /lib symlink, hiding the dynamic loader; kernel panicked before executing init",
+      "resolution": "Restore Ubuntu usr-merge after extracting the package."
+    },
+    {
+      "stage": "serial evidence",
+      "problem": "Exported root filesystem had a regular /dev/console placeholder; guest stdout was not emitted over serial",
+      "resolution": "Create a character device and reopen init standard streams after devtmpfs mount."
+    },
+    {
+      "stage": "package compression",
+      "problem": "Default xz symbol compression processed only about 3.5 GiB in twenty minutes on the bounded builder",
+      "resolution": "Default xz and gzip symbol compression were deliberately interrupted. Use KDEB_COMPRESS=gzip and a recorded build-only dpkg-deb wrapper adding -z1. Production resumes the same dpkg-buildpackage binary recipe directly against existing generated metadata; debug continues its bindeb-pkg job. Preserve earlier logs/packages and requalify final image packages."
+    }
+  ],
+  "successful_production_boot": "production/console.log",
+  "historical_attempts": "Retained separately in the private build volume; none are recorded as passing runtime tests."
+}

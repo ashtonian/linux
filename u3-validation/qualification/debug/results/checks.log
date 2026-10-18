@@ -1,0 +1,36 @@
+U3_RESULT {"backend_serial": "U3TEST", "kernel": "6.18.55-debug+truenas", "network": "loopback-only", "test": "environment", "tools": "nvme version 1.16"}
+U3_RESULT {"previous": 8, "status": "PASS", "test": "configfs_invalid_preserves_value"}
+U3_RESULT {"advertised": 8, "max_hw_sectors_kb": 1024, "requested": 0, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"advertised": 1, "max_hw_sectors_kb": 8, "requested": 1, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"advertised": 6, "max_hw_sectors_kb": 256, "requested": 6, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"advertised": 8, "max_hw_sectors_kb": 1024, "requested": 8, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"advertised": 8, "max_hw_sectors_kb": 1024, "requested": 10, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"advertised": 8, "max_hw_sectors_kb": 1024, "requested": 13, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"advertised": 8, "max_hw_sectors_kb": 1024, "requested": 255, "status": "PASS", "test": "identify_mdts"}
+U3_RESULT {"status": "PASS", "test": "configfs_active_port_unchanged"}
+U3_RESULT {"bytes": 12288, "lba_size": 4096, "sha256": "684e98504e700aa0be376e6acbcef3a4fd2378b4c412e141982fa4b0078b009f", "status": "PASS", "test": "spec_digests_False_12288"}
+U3_RESULT {"bytes": 1048576, "lba_size": 4096, "sha256": "74c71e32218bc6b9d2fbb2bc5751cfd45789427e51c86c1003d1bd7a23785f4d", "status": "PASS", "test": "spec_digests_False_1048576"}
+U3_RESULT {"application_io_bytes": 2097152, "sha256": "18512c96d8d40c85ddae732c5f647a8e33b5e5e079394629f4374a8632124b24", "status": "PASS", "test": "host_split_spec_digests_False"}
+U3_RESULT {"bytes": 12288, "lba_size": 4096, "sha256": "684e98504e700aa0be376e6acbcef3a4fd2378b4c412e141982fa4b0078b009f", "status": "PASS", "test": "spec_digests_True_12288"}
+U3_RESULT {"bytes": 1048576, "lba_size": 4096, "sha256": "74c71e32218bc6b9d2fbb2bc5751cfd45789427e51c86c1003d1bd7a23785f4d", "status": "PASS", "test": "spec_digests_True_1048576"}
+U3_RESULT {"application_io_bytes": 2097152, "sha256": "18512c96d8d40c85ddae732c5f647a8e33b5e5e079394629f4374a8632124b24", "status": "PASS", "test": "host_split_spec_digests_True"}
+U3_RESULT {"expected_fragments": [1000, 2000, 8192, 1096], "largest_write": 1048576, "split_pdus": 8, "status": "PASS", "test": "wire_evidence_spec"}
+U3_RESULT {"bytes": 12288, "lba_size": 4096, "sha256": "684e98504e700aa0be376e6acbcef3a4fd2378b4c412e141982fa4b0078b009f", "status": "PASS", "test": "page_digests_False_12288"}
+U3_RESULT {"bytes": 1048576, "lba_size": 4096, "sha256": "74c71e32218bc6b9d2fbb2bc5751cfd45789427e51c86c1003d1bd7a23785f4d", "status": "PASS", "test": "page_digests_False_1048576"}
+U3_RESULT {"application_io_bytes": 2097152, "sha256": "18512c96d8d40c85ddae732c5f647a8e33b5e5e079394629f4374a8632124b24", "status": "PASS", "test": "host_split_page_digests_False"}
+U3_RESULT {"bytes": 12288, "lba_size": 4096, "sha256": "684e98504e700aa0be376e6acbcef3a4fd2378b4c412e141982fa4b0078b009f", "status": "PASS", "test": "page_digests_True_12288"}
+U3_RESULT {"bytes": 1048576, "lba_size": 4096, "sha256": "74c71e32218bc6b9d2fbb2bc5751cfd45789427e51c86c1003d1bd7a23785f4d", "status": "PASS", "test": "page_digests_True_1048576"}
+U3_RESULT {"application_io_bytes": 2097152, "sha256": "18512c96d8d40c85ddae732c5f647a8e33b5e5e079394629f4374a8632124b24", "status": "PASS", "test": "host_split_page_digests_True"}
+U3_RESULT {"expected_fragments": [512, 4096, 7680], "largest_write": 1048576, "split_pdus": 8, "status": "PASS", "test": "wire_evidence_page"}
+U3_RESULT {"application_io_bytes": 2097152, "sha256": "18512c96d8d40c85ddae732c5f647a8e33b5e5e079394629f4374a8632124b24", "status": "PASS", "test": "host_split_configured_256k"}
+U3_RESULT {"commands": 9, "largest_write": 262144, "status": "PASS", "test": "wire_configured_256k", "total_bytes": 2097152}
+U3_RESULT {"advertised": 5, "backend": 5, "requested": 0, "status": "PASS", "test": "passthrough_mdts"}
+U3_RESULT {"bytes": 32768, "lba_size": 512, "sha256": "e7c8d5b3d0120c724f5062c8db5b4f3d5abfeb5c4d7197e27d86780f31bd6ec7", "status": "PASS", "test": "passthrough_io_mdts_0"}
+U3_RESULT {"advertised": 4, "backend": 5, "requested": 4, "status": "PASS", "test": "passthrough_mdts"}
+U3_RESULT {"bytes": 32768, "lba_size": 512, "sha256": "e7c8d5b3d0120c724f5062c8db5b4f3d5abfeb5c4d7197e27d86780f31bd6ec7", "status": "PASS", "test": "passthrough_io_mdts_4"}
+U3_RESULT {"advertised": 5, "backend": 5, "requested": 8, "status": "PASS", "test": "passthrough_mdts"}
+U3_RESULT {"bytes": 32768, "lba_size": 512, "sha256": "e7c8d5b3d0120c724f5062c8db5b4f3d5abfeb5c4d7197e27d86780f31bd6ec7", "status": "PASS", "test": "passthrough_io_mdts_8"}
+U3_RESULT {"advertised": 5, "backend": 5, "requested": 13, "status": "PASS", "test": "passthrough_mdts"}
+U3_RESULT {"bytes": 32768, "lba_size": 512, "sha256": "e7c8d5b3d0120c724f5062c8db5b4f3d5abfeb5c4d7197e27d86780f31bd6ec7", "status": "PASS", "test": "passthrough_io_mdts_13"}
+U3_RESULT {"status": "PASS", "test": "module_teardown"}
+U3_RESULT {"checks": 35, "status": "PASS", "test": "complete"}

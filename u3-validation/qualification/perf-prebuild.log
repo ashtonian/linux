@@ -1,0 +1,22 @@
+make: Entering directory '/work/package-production/tools/perf'
+  BUILD:   Doing 'make [33m-j12[m' parallel build
+[0;33mWarning[0m: Kernel ABI header differences:
+  diff -u tools/include/uapi/linux/kvm.h include/uapi/linux/kvm.h
+  diff -u tools/include/uapi/linux/stat.h include/uapi/linux/stat.h
+  diff -u tools/include/linux/gfp_types.h include/linux/gfp_types.h
+  diff -u tools/arch/x86/include/asm/msr-index.h arch/x86/include/asm/msr-index.h
+  diff -u tools/arch/x86/include/uapi/asm/kvm.h arch/x86/include/uapi/asm/kvm.h
+  diff -u tools/arch/arm64/include/uapi/asm/unistd.h arch/arm64/include/uapi/asm/unistd.h
+  diff -u tools/arch/arm64/include/asm/cputype.h arch/arm64/include/asm/cputype.h
+  diff -u tools/perf/trace/beauty/include/uapi/linux/mount.h include/uapi/linux/mount.h
+  diff -u tools/perf/trace/beauty/include/uapi/linux/stat.h include/uapi/linux/stat.h
+  diff -u tools/perf/trace/beauty/include/uapi/sound/asound.h include/uapi/sound/asound.h
+Makefile.config:591: No elfutils/debuginfod.h found, no debuginfo server support, please install libdebuginfod-dev/elfutils-debuginfod-client-devel or equivalent
+Makefile.config:634: No sys/sdt.h found, no SDT events are defined, please install systemtap-sdt-devel or systemtap-sdt-dev
+Makefile.config:722: Warning: Disabled BPF skeletons as clang (clang) is missing
+Makefile.config:805: slang not found, disables TUI support. Please install slang-devel, libslang-dev or libslang2-dev
+Makefile.config:873: No python interpreter was found: disables Python support - please install python-devel/python-dev
+Makefile.config:916: *** ERROR: No python interpreter needed for jevents generation. Install python or build with NO_JEVENTS=1..  Stop.
+make[1]: *** [Makefile.perf:288: sub-make] Error 2
+make: *** [Makefile:76: all] Error 2
+make: Leaving directory '/work/package-production/tools/perf'

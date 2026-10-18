@@ -1,0 +1,1204 @@
+  SYNC    include/config/auto.conf.cmd
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/confdata.o
+  HOSTCC  scripts/kconfig/expr.o
+  LEX     scripts/kconfig/lexer.lex.c
+  YACC    scripts/kconfig/parser.tab.[ch]
+  HOSTCC  scripts/kconfig/menu.o
+  HOSTCC  scripts/kconfig/preprocess.o
+  HOSTCC  scripts/kconfig/symbol.o
+  HOSTCC  scripts/kconfig/util.o
+  HOSTCC  scripts/kconfig/lexer.lex.o
+  HOSTCC  scripts/kconfig/parser.tab.o
+  HOSTLD  scripts/kconfig/conf
+  GEN     arch/x86/include/generated/asm/orc_hash.h
+  WRAP    arch/x86/include/generated/uapi/asm/bpf_perf_event.h
+  WRAP    arch/x86/include/generated/uapi/asm/errno.h
+  WRAP    arch/x86/include/generated/uapi/asm/fcntl.h
+  WRAP    arch/x86/include/generated/uapi/asm/ioctl.h
+  SYSHDR  arch/x86/include/generated/uapi/asm/unistd_32.h
+  WRAP    arch/x86/include/generated/uapi/asm/ioctls.h
+  WRAP    arch/x86/include/generated/uapi/asm/ipcbuf.h
+  WRAP    arch/x86/include/generated/uapi/asm/param.h
+  SYSHDR  arch/x86/include/generated/uapi/asm/unistd_64.h
+  WRAP    arch/x86/include/generated/uapi/asm/poll.h
+  WRAP    arch/x86/include/generated/uapi/asm/resource.h
+  WRAP    arch/x86/include/generated/uapi/asm/socket.h
+  WRAP    arch/x86/include/generated/uapi/asm/sockios.h
+  WRAP    arch/x86/include/generated/uapi/asm/termbits.h
+  WRAP    arch/x86/include/generated/uapi/asm/termios.h
+  WRAP    arch/x86/include/generated/uapi/asm/types.h
+  UPD     include/generated/uapi/linux/version.h
+  SYSHDR  arch/x86/include/generated/uapi/asm/unistd_x32.h
+  UPD     arch/x86/include/generated/asm/cpufeaturemasks.h
+  SYSTBL  arch/x86/include/generated/asm/syscalls_32.h
+  HOSTCC  arch/x86/tools/relocs_32.o
+  WRAP    arch/x86/include/generated/asm/early_ioremap.h
+  SYSHDR  arch/x86/include/generated/asm/unistd_32_ia32.h
+  UPD     include/generated/compile.h
+  WRAP    arch/x86/include/generated/asm/fprobe.h
+  WRAP    arch/x86/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/x86/include/generated/asm/mmzone.h
+  WRAP    arch/x86/include/generated/asm/ring_buffer.h
+  WRAP    arch/x86/include/generated/asm/irq_regs.h
+  WRAP    arch/x86/include/generated/asm/kmap_size.h
+  UPD     include/config/kernel.release
+  SYSHDR  arch/x86/include/generated/asm/unistd_64_x32.h
+  WRAP    arch/x86/include/generated/asm/local64.h
+  WRAP    arch/x86/include/generated/asm/mmiowb.h
+  WRAP    arch/x86/include/generated/asm/module.lds.h
+  HOSTCC  arch/x86/tools/relocs_64.o
+  WRAP    arch/x86/include/generated/asm/rwonce.h
+  SYSTBL  arch/x86/include/generated/asm/syscalls_64.h
+  DESCEND objtool
+  HOSTCC  arch/x86/tools/relocs_common.o
+  DESCEND bpf/resolve_btfids
+  SYSTBL  arch/x86/include/generated/asm/syscalls_x32.h
+  HYPERCALLS arch/x86/include/generated/asm/xen-hypercalls.h
+  MKDIR     /work/package-production/tools/bpf/resolve_btfids/libbpf/
+  HOSTCC  scripts/ipe/polgen/polgen
+  HOSTCC  scripts/selinux/mdp/mdp
+  MKDIR     /work/package-production/tools/bpf/resolve_btfids//libsubcmd
+  HOSTCC  scripts/kallsyms
+  INSTALL /work/package-production/tools/objtool/libsubcmd/include/subcmd/exec-cmd.h
+  UPD     include/generated/utsrelease.h
+  GEN     /work/package-production/tools/bpf/resolve_btfids/libbpf/bpf_helper_defs.h
+  HOSTLD  arch/x86/tools/relocs
+  HOSTCC  scripts/sorttable
+  INSTALL /work/package-production/tools/objtool/libsubcmd/include/subcmd/help.h
+  HOSTCC  scripts/asn1_compiler
+  INSTALL /work/package-production/tools/objtool/libsubcmd/include/subcmd/pager.h
+  INSTALL /work/package-production/tools/objtool/libsubcmd/include/subcmd/parse-options.h
+  INSTALL /work/package-production/tools/objtool/libsubcmd/include/subcmd/run-command.h
+  CC      /work/package-production/tools/objtool/libsubcmd/exec-cmd.o
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/bpf.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/libbpf.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/btf.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/libbpf_common.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/libbpf_legacy.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/bpf_helpers.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/bpf_tracing.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/bpf_endian.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/bpf_core_read.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/skel_internal.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/libbpf_version.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/usdt.bpf.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libbpf//include/bpf/bpf_helper_defs.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libsubcmd//include/subcmd/exec-cmd.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libsubcmd//include/subcmd/help.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libsubcmd//include/subcmd/pager.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libsubcmd//include/subcmd/parse-options.h
+  INSTALL /work/package-production/tools/bpf/resolve_btfids/libsubcmd//include/subcmd/run-command.h
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/exec-cmd.o
+  INSTALL libbpf_headers
+  INSTALL libsubcmd_headers
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/help.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/libbpf.o
+  CC      /work/package-production/tools/objtool/libsubcmd/help.o
+  HOSTCC  scripts/sign-file
+  CC      /work/package-production/tools/objtool/libsubcmd/pager.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/pager.o
+  CC      /work/package-production/tools/objtool/libsubcmd/parse-options.o
+  INSTALL libsubcmd_headers
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/bpf.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/parse-options.o
+  CC      /work/package-production/tools/objtool/libsubcmd/run-command.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/nlattr.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/run-command.o
+  CC      /work/package-production/tools/objtool/libsubcmd/sigchain.o
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  CC      /work/package-production/tools/objtool/libsubcmd/subcmd-config.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/btf.o
+  LD      /work/package-production/tools/objtool/libsubcmd/libsubcmd-in.o
+  AR      /work/package-production/tools/objtool/libsubcmd/libsubcmd.a
+  CC      scripts/mod/devicetable-offsets.s
+  CC      /work/package-production/tools/objtool/arch/x86/special.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/sigchain.o
+  MKDIR   /work/package-production/tools/objtool/arch/x86/lib/
+  MKELF   scripts/mod/elfconfig.h
+  GEN     /work/package-production/tools/objtool/arch/x86/lib/inat-tables.c
+  HOSTCC  scripts/mod/modpost.o
+  CC      /work/package-production/tools/objtool/arch/x86/orc.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/subcmd-config.o
+  LD      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/libsubcmd-in.o
+  AR      /work/package-production/tools/bpf/resolve_btfids/libsubcmd/libsubcmd.a
+  UPD     scripts/mod/devicetable-offsets.h
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/libbpf_utils.o
+  CC      /work/package-production/tools/objtool/arch/x86/decode.o
+  CC      /work/package-production/tools/objtool/weak.o
+  HOSTCC  scripts/mod/sumversion.o
+  CC      /work/package-production/tools/objtool/check.o
+  HOSTCC  scripts/mod/symsearch.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/netlink.o
+  HOSTCC  scripts/mod/file2alias.o
+  LD      /work/package-production/tools/objtool/arch/x86/objtool-in.o
+  CC      /work/package-production/tools/objtool/special.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/bpf_prog_linfo.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/libbpf_probes.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/hashmap.o
+  CC      /work/package-production/tools/objtool/builtin-check.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/btf_dump.o
+  CC      /work/package-production/tools/objtool/elf.o
+  HOSTLD  scripts/mod/modpost
+  UPD     include/generated/timeconst.h
+  CC      kernel/bounds.s
+  CHKSHA1 include/linux/atomic/atomic-arch-fallback.h
+  CHKSHA1 include/linux/atomic/atomic-instrumented.h
+  CHKSHA1 include/linux/atomic/atomic-long.h
+  UPD     include/generated/bounds.h
+  CC      arch/x86/kernel/asm-offsets.s
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/ringbuf.o
+  CC      /work/package-production/tools/objtool/objtool.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/strset.o
+  CC      /work/package-production/tools/objtool/orc_gen.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/linker.o
+  UPD     include/generated/asm-offsets.h
+  CC      kernel/sched/rq-offsets.s
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/gen_loader.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/relo_core.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/usdt.o
+  CC      /work/package-production/tools/objtool/orc_dump.o
+  UPD     include/generated/rq-offsets.h
+  CC      /work/package-production/tools/objtool/libstring.o
+  CALL    scripts/checksyscalls.sh
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/zip.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/elf.o
+  CC      /work/package-production/tools/objtool/libctype.o
+  CC      /work/package-production/tools/objtool/str_error_r.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/features.o
+  CC      /work/package-production/tools/objtool/librbtree.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/btf_iter.o
+  CC      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/btf_relocate.o
+  LD      /work/package-production/tools/objtool/objtool-in.o
+  LINK    /work/package-production/tools/objtool/objtool
+  LD      /work/package-production/tools/bpf/resolve_btfids/libbpf/staticobjs/libbpf-in.o
+  LINK    /work/package-production/tools/bpf/resolve_btfids/libbpf/libbpf.a
+  HOSTCC  /work/package-production/tools/bpf/resolve_btfids/main.o
+  HOSTCC  /work/package-production/tools/bpf/resolve_btfids/rbtree.o
+  HOSTCC  /work/package-production/tools/bpf/resolve_btfids/zalloc.o
+  HOSTCC  /work/package-production/tools/bpf/resolve_btfids/string.o
+  HOSTCC  /work/package-production/tools/bpf/resolve_btfids/ctype.o
+  HOSTCC  /work/package-production/tools/bpf/resolve_btfids/str_error_r.o
+  HOSTLD  /work/package-production/tools/bpf/resolve_btfids/resolve_btfids-in.o
+  LINK     resolve_btfids
+  LDS     scripts/module.lds
+  CC      init/main.o
+make[3]: *** No rule to make target 'debian/certs/truenas-uefi-certs.pem', needed by 'certs/x509_certificate_list'.  Stop.
+make[3]: *** Waiting for unfinished jobs....
+  CC      certs/system_keyring.o
+  HOSTCC  usr/gen_init_cpio
+  AS      arch/x86/boot/startup/efi-mixed.o
+  CC      mm/kfence/core.o
+  AS      arch/x86/boot/startup/la57toggle.o
+  CC      arch/x86/boot/startup/gdt_idt.o
+  CC      kernel/sched/core.o
+  GEN     usr/initramfs_data.cpio
+  CC      arch/x86/boot/startup/map_kernel.o
+  COPY    usr/initramfs_inc_data
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.a
+make[2]: *** [scripts/Makefile.build:544: certs] Error 2
+make[2]: *** Waiting for unfinished jobs....
+  CC      arch/x86/boot/startup/sme.o
+  UPD     init/utsversion-tmp.h
+  CC      init/do_mounts.o
+  CC      kernel/locking/mutex.o
+  CC      arch/x86/boot/startup/sev-startup.o
+  CC      mm/kfence/report.o
+  CC      kernel/locking/semaphore.o
+  CC      init/do_mounts_initrd.o
+  AR      arch/x86/boot/startup/lib.a
+  OBJCOPY arch/x86/boot/startup/gdt_idt.pi.o
+  OBJCOPY arch/x86/boot/startup/map_kernel.pi.o
+  OBJCOPY arch/x86/boot/startup/sme.pi.o
+  OBJCOPY arch/x86/boot/startup/sev-startup.pi.o
+  AR      arch/x86/boot/startup/built-in.a
+  CC      arch/x86/coco/tdx/debug.o
+  AR      mm/kfence/built-in.a
+  CC      mm/damon/core.o
+  AS      arch/x86/coco/tdx/tdcall.o
+  CC      kernel/sched/fair.o
+  CC      arch/x86/coco/tdx/tdx.o
+  CC      kernel/locking/rwsem.o
+  CC      init/initramfs.o
+  CC      kernel/locking/percpu-rwsem.o
+  CC      arch/x86/coco/tdx/tdx-shared.o
+  CC      init/calibrate.o
+  AR      arch/x86/coco/tdx/built-in.a
+  CC      arch/x86/coco/sev/core.o
+  CC      init/init_task.o
+  CC      kernel/locking/spinlock.o
+  CC      mm/damon/ops-common.o
+  CC      kernel/locking/osq_lock.o
+  CC      init/version.o
+  CC      kernel/locking/qspinlock.o
+  AR      init/built-in.a
+  CC      arch/x86/coco/sev/noinstr.o
+  CC      arch/x86/entry/vdso/vma.o
+  CC      mm/damon/vaddr.o
+  CC      kernel/locking/rtmutex_api.o
+  CC      arch/x86/coco/sev/vc-handle.o
+  CC      kernel/power/qos.o
+  CC      arch/x86/entry/vdso/extable.o
+  CC      mm/damon/paddr.o
+  CC      kernel/locking/qrwlock.o
+  CC      kernel/power/main.o
+  LDS     arch/x86/entry/vdso/vdso.lds
+  AS      arch/x86/entry/vdso/vdso-note.o
+  CC      arch/x86/coco/sev/svsm.o
+  CC      arch/x86/entry/vdso/vclock_gettime.o
+  AR      kernel/locking/built-in.a
+  CC      mm/filemap.o
+  CC      mm/damon/sysfs-common.o
+  AR      arch/x86/coco/sev/built-in.a
+  CC      arch/x86/coco/core.o
+  CC      arch/x86/entry/vdso/vgetcpu.o
+  CC      arch/x86/entry/vdso/vgetrandom.o
+  AR      arch/x86/coco/built-in.a
+  AS      arch/x86/entry/vdso/vgetrandom-chacha.o
+  CC      kernel/sched/build_policy.o
+  CC      kernel/power/console.o
+  AS      arch/x86/entry/vdso/vsgx.o
+  HOSTCC  arch/x86/entry/vdso/vdso2c
+  CC      mm/damon/sysfs-schemes.o
+  CC      kernel/printk/printk.o
+  LDS     arch/x86/entry/vdso/vdsox32.lds
+  X32     arch/x86/entry/vdso/vdso-note-x32.o
+  X32     arch/x86/entry/vdso/vclock_gettime-x32.o
+  X32     arch/x86/entry/vdso/vgetcpu-x32.o
+  X32     arch/x86/entry/vdso/vgetrandom-x32.o
+  X32     arch/x86/entry/vdso/vgetrandom-chacha-x32.o
+  X32     arch/x86/entry/vdso/vsgx-x32.o
+  LDS     arch/x86/entry/vdso/vdso32/vdso32.lds
+  AS      arch/x86/entry/vdso/vdso32/note.o
+  AS      arch/x86/entry/vdso/vdso32/system_call.o
+  AS      arch/x86/entry/vdso/vdso32/sigreturn.o
+  CC      arch/x86/entry/vdso/vdso32/vclock_gettime.o
+  CC      kernel/power/process.o
+  CC      arch/x86/entry/vdso/vdso32/vgetcpu.o
+  CC      arch/x86/entry/vdso/vdso32-setup.o
+  CC      mm/damon/sysfs.o
+  CC      kernel/power/suspend.o
+  VDSO    arch/x86/entry/vdso/vdso64.so.dbg
+  VDSO    arch/x86/entry/vdso/vdsox32.so.dbg
+  VDSO    arch/x86/entry/vdso/vdso32.so.dbg
+  OBJCOPY arch/x86/entry/vdso/vdso64.so
+  OBJCOPY arch/x86/entry/vdso/vdsox32.so
+  OBJCOPY arch/x86/entry/vdso/vdso32.so
+  VDSO2C  arch/x86/entry/vdso/vdso-image-64.c
+  VDSO2C  arch/x86/entry/vdso/vdso-image-x32.c
+  VDSO2C  arch/x86/entry/vdso/vdso-image-32.c
+  CC      arch/x86/entry/vdso/vdso-image-64.o
+  CC      arch/x86/entry/vdso/vdso-image-x32.o
+  CC      kernel/printk/printk_safe.o
+  CC      arch/x86/entry/vdso/vdso-image-32.o
+  CC      mm/damon/modules-common.o
+  CC      arch/x86/events/amd/core.o
+  CC      kernel/power/hibernate.o
+  AR      arch/x86/entry/vdso/built-in.a
+  CC      arch/x86/entry/vsyscall/vsyscall_64.o
+  CC      kernel/printk/nbcon.o
+  CC      mm/damon/reclaim.o
+  CC      kernel/printk/braille.o
+  AS      arch/x86/entry/vsyscall/vsyscall_emu_64.o
+  CC      arch/x86/events/amd/lbr.o
+  AR      arch/x86/entry/vsyscall/built-in.a
+  AS      arch/x86/entry/entry.o
+  CC      kernel/power/snapshot.o
+  AS      arch/x86/entry/entry_64.o
+  CC      arch/x86/entry/syscall_64.o
+  CC      mm/damon/lru_sort.o
+  CC      kernel/printk/printk_ringbuffer.o
+  CC      arch/x86/events/amd/ibs.o
+  CC      mm/damon/stat.o
+  AS      arch/x86/entry/thunk.o
+  AS      arch/x86/entry/entry_64_fred.o
+  CC      arch/x86/entry/entry_fred.o
+  CC      kernel/printk/sysctl.o
+  AR      mm/damon/built-in.a
+  CC      mm/mempool.o
+  CC      kernel/power/swap.o
+  AR      kernel/printk/built-in.a
+  CC      kernel/sched/build_utility.o
+  CC      arch/x86/events/amd/uncore.o
+  AS      arch/x86/entry/entry_64_compat.o
+  CC      arch/x86/entry/syscall_32.o
+  CC      mm/oom_kill.o
+  CC      kernel/power/user.o
+  AR      arch/x86/entry/built-in.a
+  CC      arch/x86/events/amd/iommu.o
+  CC      arch/x86/events/intel/core.o
+  CC      kernel/power/poweroff.o
+  CC      kernel/power/energy_model.o
+  CC      mm/fadvise.o
+  CC      kernel/irq/irqdesc.o
+  CC [M]  arch/x86/events/amd/power.o
+  AR      kernel/power/built-in.a
+  CC      kernel/rcu/update.o
+  CC      mm/maccess.o
+  AR      arch/x86/events/amd/built-in.a
+  CC      kernel/irq/handle.o
+  CC      arch/x86/xen/enlighten.o
+  CC      mm/page-writeback.o
+  CC      kernel/irq/manage.o
+  CC      arch/x86/xen/mmu.o
+  CC      arch/x86/events/intel/bts.o
+  CC      arch/x86/xen/time.o
+  CC      kernel/rcu/sync.o
+  CC      kernel/rcu/srcutree.o
+  CC      kernel/irq/spurious.o
+  AR      kernel/sched/built-in.a
+  CC      arch/x86/events/intel/ds.o
+  CC      arch/x86/xen/grant-table.o
+  CC      kernel/livepatch/core.o
+  CC      mm/folio-compat.o
+  CC      kernel/irq/resend.o
+  CC      kernel/rcu/tree.o
+  CC      arch/x86/xen/suspend.o
+  CC      mm/readahead.o
+  CC      kernel/livepatch/patch.o
+  CC      kernel/irq/chip.o
+  CC      arch/x86/xen/enlighten_hvm.o
+  CC      kernel/livepatch/shadow.o
+  CC      arch/x86/events/intel/knc.o
+  CC      mm/swap.o
+  CC      kernel/irq/dummychip.o
+  CC      kernel/livepatch/state.o
+  CC      arch/x86/xen/mmu_hvm.o
+  CC      arch/x86/events/intel/lbr.o
+  CC      kernel/irq/devres.o
+  CC      kernel/livepatch/transition.o
+  CC      arch/x86/xen/suspend_hvm.o
+  CC      kernel/irq/kexec.o
+  AR      kernel/livepatch/built-in.a
+  CC      arch/x86/platform/pvh/enlighten.o
+  CC      mm/truncate.o
+  CC      arch/x86/xen/platform-pci-unplug.o
+  CC      kernel/irq/generic-chip.o
+  CC      arch/x86/events/intel/p4.o
+  AS      arch/x86/platform/pvh/head.o
+  AR      arch/x86/platform/pvh/built-in.a
+  CC      arch/x86/events/intel/p6.o
+  CC      arch/x86/xen/setup.o
+  CC      kernel/irq/autoprobe.o
+  CC      kernel/rcu/rcu_segcblist.o
+  CC      kernel/dma/mapping.o
+  CC      mm/vmscan.o
+  CC      kernel/irq/irqdomain.o
+  CC      arch/x86/events/intel/pt.o
+  AR      kernel/rcu/built-in.a
+  CC      arch/x86/events/zhaoxin/core.o
+  CC      arch/x86/xen/apic.o
+  CC      kernel/irq/proc.o
+  AR      arch/x86/events/zhaoxin/built-in.a
+  CC      kernel/dma/direct.o
+  CC      arch/x86/xen/pmu.o
+  CC [M]  arch/x86/events/intel/uncore.o
+  CC      kernel/irq/migration.o
+  CC      arch/x86/xen/suspend_pv.o
+  CC [M]  arch/x86/events/intel/uncore_nhmex.o
+  CC      kernel/dma/ops_helpers.o
+  CC      kernel/irq/cpuhotplug.o
+  CC      kernel/dma/dummy.o
+  CC      arch/x86/xen/p2m.o
+  CC      kernel/entry/common.o
+  CC      kernel/irq/pm.o
+  CC [M]  arch/x86/events/intel/uncore_snb.o
+  CC      kernel/dma/contiguous.o
+  CC      kernel/irq/msi.o
+  CC      kernel/entry/syscall-common.o
+  CC      arch/x86/xen/enlighten_pv.o
+  CC      kernel/dma/swiotlb.o
+  CC [M]  arch/x86/events/intel/uncore_snbep.o
+  CC      kernel/entry/syscall_user_dispatch.o
+  CC      kernel/irq/affinity.o
+  CC      kernel/dma/pool.o
+  CC      kernel/entry/virt.o
+  CC      arch/x86/xen/mmu_pv.o
+  CC      kernel/irq/matrix.o
+  CC      mm/shrinker.o
+  CC      kernel/dma/remap.o
+  AR      kernel/entry/built-in.a
+  CC      kernel/unwind/user.o
+  CC [M]  arch/x86/events/intel/uncore_discovery.o
+  CC      kernel/unwind/deferred.o
+  AR      kernel/dma/built-in.a
+  CC      arch/x86/xen/irq.o
+  CC      mm/shmem.o
+  AR      kernel/irq/built-in.a
+  CC      arch/x86/events/core.o
+  AR      kernel/unwind/built-in.a
+  CC      kernel/module/main.o
+  CC      kernel/time/time.o
+  CC [M]  arch/x86/events/intel/cstate.o
+  CC      arch/x86/xen/multicalls.o
+  LD [M]  arch/x86/events/intel/intel-uncore.o
+  LD [M]  arch/x86/events/intel/intel-cstate.o
+  AR      arch/x86/events/intel/built-in.a
+  CC      arch/x86/hyperv/hv_init.o
+  CC      kernel/time/timer.o
+  AS      arch/x86/xen/xen-asm.o
+  CC      arch/x86/xen/enlighten_pvh.o
+  CC      arch/x86/events/probe.o
+  CC      arch/x86/hyperv/mmu.o
+  CC      arch/x86/xen/trace.o
+  CC      kernel/module/strict_rwx.o
+  CC      arch/x86/events/utils.o
+  CC      mm/util.o
+  CC      kernel/time/hrtimer.o
+  CC      kernel/module/kmod.o
+  CC      arch/x86/events/msr.o
+  CC      arch/x86/hyperv/nested.o
+  CC      kernel/module/signing.o
+  CC      mm/mmzone.o
+  CC      arch/x86/xen/smp.o
+  CC      arch/x86/hyperv/irqdomain.o
+  CC [M]  arch/x86/events/rapl.o
+  CC      kernel/time/sleep_timeout.o
+  CC      kernel/module/livepatch.o
+  CC      mm/vmstat.o
+  CC      arch/x86/xen/smp_pv.o
+  CC      arch/x86/hyperv/ivm.o
+  CC      kernel/time/timekeeping.o
+  AR      arch/x86/events/built-in.a
+  CC      kernel/futex/core.o
+  CC      kernel/module/tree_lookup.o
+  CC      kernel/module/kallsyms.o
+  CC      arch/x86/xen/smp_hvm.o
+  CC      arch/x86/hyperv/hv_apic.o
+  CC      mm/backing-dev.o
+  CC      kernel/futex/syscalls.o
+  CC      kernel/time/ntp.o
+  CC      arch/x86/xen/spinlock.o
+  CC      kernel/module/procfs.o
+  CC      arch/x86/hyperv/hv_spinlock.o
+  CC      kernel/module/sysfs.o
+  CC      arch/x86/xen/vga.o
+  CC      kernel/time/clocksource.o
+  AR      arch/x86/hyperv/built-in.a
+  CC      arch/x86/realmode/init.o
+  CC      kernel/futex/pi.o
+  CC      mm/mm_init.o
+  CC      arch/x86/xen/efi.o
+  AS      arch/x86/realmode/rm/header.o
+  AR      kernel/module/built-in.a
+  CC      kernel/cgroup/cgroup.o
+  AS      arch/x86/realmode/rm/trampoline_64.o
+  AS      arch/x86/realmode/rm/stack.o
+  AS      arch/x86/realmode/rm/reboot.o
+  AS      arch/x86/realmode/rm/wakeup_asm.o
+  CC      arch/x86/realmode/rm/wakemain.o
+  CC      arch/x86/realmode/rm/video-mode.o
+  CC      kernel/futex/requeue.o
+  CC      kernel/time/jiffies.o
+  AS      arch/x86/realmode/rm/copy.o
+  AS      arch/x86/realmode/rm/bioscall.o
+  CC      arch/x86/realmode/rm/regs.o
+  CC      arch/x86/realmode/rm/video-vga.o
+  CC      arch/x86/realmode/rm/video-vesa.o
+  AR      arch/x86/xen/built-in.a
+  CC      mm/percpu.o
+  CC      arch/x86/realmode/rm/video-bios.o
+  PASYMS  arch/x86/realmode/rm/pasyms.h
+  LDS     arch/x86/realmode/rm/realmode.lds
+  LD      arch/x86/realmode/rm/realmode.elf
+  RELOCS  arch/x86/realmode/rm/realmode.relocs
+  OBJCOPY arch/x86/realmode/rm/realmode.bin
+  AS      arch/x86/realmode/rmpiggy.o
+  AR      arch/x86/realmode/built-in.a
+  CC      arch/x86/kernel/fpu/init.o
+  CC      kernel/time/timer_list.o
+  CC      kernel/futex/waitwake.o
+  CC      arch/x86/kernel/fpu/bugs.o
+  CC      kernel/trace/trace_clock.o
+  CC      arch/x86/kernel/fpu/core.o
+  CC      kernel/time/timeconv.o
+  AR      kernel/futex/built-in.a
+  CC      mm/slab_common.o
+  CC      kernel/trace/ftrace.o
+  CC      kernel/time/timecounter.o
+  CC      kernel/time/alarmtimer.o
+  CC      arch/x86/kernel/fpu/regset.o
+  CC      kernel/cgroup/rstat.o
+  CC      kernel/time/posix-timers.o
+  CC      arch/x86/kernel/fpu/signal.o
+  CC      mm/compaction.o
+  CC      arch/x86/mm/pat/set_memory.o
+  CC      arch/x86/kernel/fpu/xstate.o
+  CC      kernel/cgroup/namespace.o
+  CC      kernel/time/posix-cpu-timers.o
+  CC      kernel/cgroup/cgroup-v1.o
+  AR      arch/x86/kernel/fpu/built-in.a
+  CC      kernel/trace/ring_buffer.o
+  CC      arch/x86/kernel/cpu/mce/core.o
+  CC      kernel/time/posix-clock.o
+  CC      arch/x86/mm/pat/memtype.o
+  CC      kernel/cgroup/freezer.o
+  CC      kernel/time/itimer.o
+  CC      mm/show_mem.o
+  CC      arch/x86/mm/pat/memtype_interval.o
+  CC      arch/x86/kernel/cpu/mce/severity.o
+  CC      kernel/cgroup/legacy_freezer.o
+  AR      arch/x86/mm/pat/built-in.a
+  CC      arch/x86/mm/init.o
+  CC      kernel/time/clockevents.o
+  CC      mm/interval_tree.o
+  CC      kernel/cgroup/pids.o
+  CC      arch/x86/kernel/cpu/mce/genpool.o
+  CC      kernel/time/tick-common.o
+  CC      arch/x86/mm/init_64.o
+  CC      kernel/trace/trace.o
+  CC      mm/list_lru.o
+  CC      kernel/cgroup/rdma.o
+  CC      arch/x86/kernel/cpu/mce/intel.o
+  CC      kernel/time/tick-broadcast.o
+  CC      kernel/cgroup/cpuset.o
+  CC      arch/x86/kernel/cpu/mce/amd.o
+  CC      mm/workingset.o
+  CC      kernel/time/tick-broadcast-hrtimer.o
+  CC      arch/x86/mm/fault.o
+  CC      mm/debug.o
+  CC      arch/x86/kernel/cpu/mce/threshold.o
+  CC      kernel/time/tick-oneshot.o
+  CC      kernel/time/tick-sched.o
+  CC      mm/gup.o
+  CC      kernel/cgroup/misc.o
+  CC      arch/x86/kernel/cpu/mce/apei.o
+  CC      arch/x86/mm/ioremap.o
+  CC [M]  arch/x86/kernel/cpu/mce/inject.o
+  AR      kernel/cgroup/built-in.a
+  CC      kernel/trace/trace_output.o
+  CC      kernel/time/timer_migration.o
+  CC      arch/x86/mm/extable.o
+  AR      arch/x86/kernel/cpu/mce/built-in.a
+  LD [M]  arch/x86/kernel/cpu/mce/mce-inject.o
+  CC      mm/mmap_lock.o
+  CC      arch/x86/kernel/cpu/mtrr/mtrr.o
+  CC      kernel/trace/trace_seq.o
+  CC      arch/x86/mm/mmap.o
+  AR      arch/x86/crypto/built-in.a
+  AS [M]  arch/x86/crypto/twofish-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/twofish_glue.o
+  CC      kernel/time/vsyscall.o
+  CC      arch/x86/kernel/cpu/mtrr/if.o
+  CC      kernel/trace/trace_stat.o
+  CC      kernel/time/timekeeping_debug.o
+  CC      arch/x86/mm/pgtable.o
+  CC      mm/vma_init.o
+  AS [M]  arch/x86/crypto/twofish-x86_64-asm_64-3way.o
+  CC [M]  arch/x86/crypto/twofish_glue_3way.o
+  CC      arch/x86/kernel/cpu/mtrr/generic.o
+  CC      kernel/time/namespace.o
+  CC      kernel/trace/trace_printk.o
+  AS [M]  arch/x86/crypto/twofish-avx-x86_64-asm_64.o
+  CC      mm/highmem.o
+  CC [M]  arch/x86/crypto/twofish_avx_glue.o
+  CC      arch/x86/mm/physaddr.o
+  CC      arch/x86/kernel/cpu/mtrr/cleanup.o
+  CC      kernel/time/namespace_vdso.o
+  CC      mm/memory.o
+  CC      arch/x86/mm/tlb.o
+  AS [M]  arch/x86/crypto/serpent-sse2-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/serpent_sse2_glue.o
+  CC      kernel/trace/pid_list.o
+  AR      kernel/time/built-in.a
+  CC      arch/x86/kernel/acpi/boot.o
+  AR      arch/x86/kernel/cpu/mtrr/built-in.a
+  CC      arch/x86/kernel/cpu/microcode/core.o
+  AS [M]  arch/x86/crypto/serpent-avx-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/serpent_avx_glue.o
+  CC      kernel/trace/tracing_map.o
+  CC      arch/x86/mm/cpu_entry_area.o
+  CC      arch/x86/kernel/acpi/sleep.o
+  CC      arch/x86/kernel/cpu/microcode/intel.o
+  AS [M]  arch/x86/crypto/serpent-avx2-asm_64.o
+  CC [M]  arch/x86/crypto/serpent_avx2_glue.o
+  CC      arch/x86/mm/maccess.o
+  AS      arch/x86/kernel/acpi/wakeup_64.o
+  CC      arch/x86/kernel/acpi/apei.o
+  CC      kernel/trace/trace_sched_switch.o
+  AS [M]  arch/x86/crypto/des3_ede-asm_64.o
+  CC      arch/x86/mm/pgprot.o
+  CC [M]  arch/x86/crypto/des3_ede_glue.o
+  CC      arch/x86/kernel/cpu/microcode/amd.o
+  CC      arch/x86/kernel/acpi/cppc.o
+  CC      arch/x86/mm/hugetlbpage.o
+  AS [M]  arch/x86/crypto/camellia-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/camellia_glue.o
+  CC      kernel/trace/trace_functions.o
+  CC      arch/x86/kernel/acpi/madt_wakeup.o
+  AR      arch/x86/kernel/cpu/microcode/built-in.a
+  CC      arch/x86/kernel/cpu/resctrl/core.o
+  CC      arch/x86/mm/dump_pagetables.o
+  AS      arch/x86/kernel/acpi/madt_playdead.o
+  CC      arch/x86/kernel/acpi/cstate.o
+  CC      arch/x86/kernel/cpu/resctrl/rdtgroup.o
+  AS [M]  arch/x86/crypto/camellia-aesni-avx-asm_64.o
+  CC [M]  arch/x86/crypto/camellia_aesni_avx_glue.o
+  CC      arch/x86/mm/kmmio.o
+  CC      kernel/trace/trace_nop.o
+  AR      arch/x86/kernel/acpi/built-in.a
+  CC      arch/x86/ia32/audit.o
+  AR      arch/x86/ia32/built-in.a
+  CC      kernel/bpf/core.o
+  CC      arch/x86/kernel/cpu/resctrl/monitor.o
+  AS [M]  arch/x86/crypto/camellia-aesni-avx2-asm_64.o
+  CC      arch/x86/mm/pf_in.o
+  CC [M]  arch/x86/crypto/camellia_aesni_avx2_glue.o
+  CC      kernel/trace/trace_stack.o
+  CC      arch/x86/mm/mmio-mod.o
+  CC      arch/x86/kernel/cpu/resctrl/ctrlmondata.o
+  AS [M]  arch/x86/crypto/blowfish-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/blowfish_glue.o
+  CC      mm/mincore.o
+  CC      kernel/trace/trace_mmiotrace.o
+  CC      arch/x86/kernel/cpu/resctrl/pseudo_lock.o
+  CC      arch/x86/mm/numa.o
+  AS [M]  arch/x86/crypto/cast5-avx-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/cast5_avx_glue.o
+  CC      mm/mlock.o
+  CC      kernel/trace/trace_functions_graph.o
+  CC      arch/x86/mm/amdtopology.o
+  AR      arch/x86/kernel/cpu/resctrl/built-in.a
+  CC      arch/x86/kernel/cpu/sgx/driver.o
+  AS [M]  arch/x86/crypto/cast6-avx-x86_64-asm_64.o
+  CC [M]  arch/x86/crypto/cast6_avx_glue.o
+  CC      kernel/bpf/syscall.o
+  CC      arch/x86/mm/srat.o
+  AS [M]  arch/x86/crypto/aegis128-aesni-asm.o
+  CC [M]  arch/x86/crypto/aegis128-aesni-glue.o
+  CC      arch/x86/kernel/cpu/sgx/encl.o
+  CC      kernel/trace/blktrace.o
+  CC      mm/mmap.o
+  CC      arch/x86/mm/pkeys.o
+  AS [M]  arch/x86/crypto/aesni-intel_asm.o
+  CC [M]  arch/x86/crypto/aesni-intel_glue.o
+  CC      arch/x86/mm/kaslr.o
+  CC      arch/x86/kernel/cpu/sgx/ioctl.o
+  CC      kernel/trace/fgraph.o
+  CC      arch/x86/mm/pti.o
+  CC      mm/mmu_gather.o
+  AS [M]  arch/x86/crypto/aes-ctr-avx-x86_64.o
+  AS [M]  arch/x86/crypto/aes-gcm-aesni-x86_64.o
+  AS [M]  arch/x86/crypto/aes-xts-avx-x86_64.o
+  AS [M]  arch/x86/crypto/aes-gcm-avx10-x86_64.o
+  AS [M]  arch/x86/crypto/ghash-clmulni-intel_asm.o
+  CC [M]  arch/x86/crypto/ghash-clmulni-intel_glue.o
+  CC      arch/x86/kernel/cpu/sgx/main.o
+  CC      arch/x86/mm/mem_encrypt.o
+  CC      mm/mprotect.o
+  CC      kernel/trace/trace_events.o
+  AS [M]  arch/x86/crypto/nh-sse2-x86_64.o
+  CC [M]  arch/x86/crypto/nhpoly1305-sse2-glue.o
+  CC      kernel/bpf/verifier.o
+  CC      arch/x86/mm/mem_encrypt_amd.o
+  AS [M]  arch/x86/crypto/nh-avx2-x86_64.o
+  CC [M]  arch/x86/crypto/nhpoly1305-avx2-glue.o
+  CC      arch/x86/kernel/cpu/sgx/virt.o
+  AS      arch/x86/mm/mem_encrypt_boot.o
+  AR      arch/x86/mm/built-in.a
+  LD [M]  arch/x86/crypto/twofish-x86_64.o
+  LD [M]  arch/x86/crypto/twofish-x86_64-3way.o
+  CC      kernel/events/core.o
+  LD [M]  arch/x86/crypto/twofish-avx-x86_64.o
+  LD [M]  arch/x86/crypto/serpent-sse2-x86_64.o
+  LD [M]  arch/x86/crypto/serpent-avx-x86_64.o
+  LD [M]  arch/x86/crypto/serpent-avx2.o
+  LD [M]  arch/x86/crypto/des3_ede-x86_64.o
+  CC      mm/mremap.o
+  LD [M]  arch/x86/crypto/camellia-x86_64.o
+  LD [M]  arch/x86/crypto/camellia-aesni-avx-x86_64.o
+  LD [M]  arch/x86/crypto/camellia-aesni-avx2.o
+  LD [M]  arch/x86/crypto/blowfish-x86_64.o
+  LD [M]  arch/x86/crypto/cast5-avx-x86_64.o
+  LD [M]  arch/x86/crypto/cast6-avx-x86_64.o
+  LD [M]  arch/x86/crypto/aegis128-aesni.o
+  LD [M]  arch/x86/crypto/aesni-intel.o
+  LD [M]  arch/x86/crypto/ghash-clmulni-intel.o
+  LD [M]  arch/x86/crypto/nhpoly1305-sse2.o
+  LD [M]  arch/x86/crypto/nhpoly1305-avx2.o
+  CC      arch/x86/kernel/apic/apic.o
+  AR      arch/x86/kernel/cpu/sgx/built-in.a
+  CC      arch/x86/kernel/cpu/cacheinfo.o
+  CC      kernel/trace/trace_export.o
+  CC      arch/x86/kernel/cpu/scattered.o
+  CC      mm/msync.o
+  CC      arch/x86/kernel/apic/apic_common.o
+  CC      kernel/trace/trace_syscalls.o
+  CC      arch/x86/kernel/cpu/topology_common.o
+  CC      mm/page_vma_mapped.o
+  CC      arch/x86/kernel/apic/apic_noop.o
+  CC      arch/x86/kernel/cpu/topology_ext.o
+  CC      arch/x86/kernel/apic/ipi.o
+  CC      kernel/trace/trace_event_perf.o
+  CC      mm/pagewalk.o
+  CC      arch/x86/kernel/cpu/topology_amd.o
+  CC      arch/x86/kernel/apic/vector.o
+  CC      arch/x86/kernel/cpu/common.o
+  CC      kernel/trace/trace_events_filter.o
+  CC      mm/pgtable-generic.o
+  CC      arch/x86/kernel/apic/init.o
+  CC      mm/rmap.o
+  CC      arch/x86/kernel/cpu/rdrand.o
+  CC      kernel/trace/trace_events_trigger.o
+  CC      arch/x86/kernel/cpu/match.o
+  CC      arch/x86/kernel/apic/hw_nmi.o
+  CC      arch/x86/kernel/cpu/bugs.o
+  CC      arch/x86/kernel/apic/io_apic.o
+  CC      kernel/events/ring_buffer.o
+  CC      kernel/trace/trace_eprobe.o
+  CC      kernel/events/callchain.o
+  CC      mm/vmalloc.o
+  CC      arch/x86/kernel/apic/msi.o
+  CC      arch/x86/kernel/cpu/aperfmperf.o
+  CC      kernel/trace/trace_events_synth.o
+  CC      kernel/events/hw_breakpoint.o
+  CC      arch/x86/kernel/apic/x2apic_phys.o
+  CC      arch/x86/kernel/cpu/cpuid-deps.o
+  CC      arch/x86/kernel/apic/x2apic_cluster.o
+  CC      kernel/events/uprobes.o
+  CC      arch/x86/kernel/cpu/cpuid_0x2_table.o
+  CC      kernel/trace/trace_events_hist.o
+  CC      arch/x86/kernel/cpu/umwait.o
+  CC      arch/x86/kernel/apic/apic_flat_64.o
+  CC      arch/x86/kernel/apic/probe_64.o
+  MKCAP   arch/x86/kernel/cpu/capflags.c
+  CC      kernel/bpf/inode.o
+  CC      mm/vma.o
+  AR      arch/x86/kernel/apic/built-in.a
+  CC      kernel/fork.o
+  AR      kernel/events/built-in.a
+  AR      arch/x86/platform/atom/built-in.a
+  AR      arch/x86/platform/ce4100/built-in.a
+  CC      arch/x86/platform/efi/memmap.o
+  CC      arch/x86/platform/efi/quirks.o
+  CC      kernel/bpf/helpers.o
+  CC      mm/vma_exec.o
+  CC      arch/x86/platform/efi/efi.o
+  CC      kernel/trace/bpf_trace.o
+  CC      kernel/trace/trace_kprobe.o
+  CC      mm/process_vm_access.o
+  CC      arch/x86/platform/efi/efi_64.o
+  CC      kernel/bpf/tnum.o
+  CC      mm/mseal.o
+  CC      kernel/bpf/log.o
+  AS      arch/x86/platform/efi/efi_stub_64.o
+  AS      arch/x86/platform/efi/efi_thunk_64.o
+  CC      arch/x86/platform/efi/runtime-map.o
+  CC      arch/x86/kernel/cpu/powerflags.o
+  CC      mm/page_alloc.o
+  CC      arch/x86/kernel/kprobes/core.o
+  CC      kernel/trace/error_report-traces.o
+  CC      kernel/bpf/token.o
+  AR      arch/x86/platform/efi/built-in.a
+  AR      arch/x86/platform/geode/built-in.a
+  AR      arch/x86/platform/iris/built-in.a
+  CC      arch/x86/platform/intel/iosf_mbi.o
+  CC      kernel/trace/power-traces.o
+  CC      arch/x86/kernel/kprobes/opt.o
+  CC      kernel/bpf/liveness.o
+  AR      arch/x86/platform/intel/built-in.a
+  AR      arch/x86/platform/intel-mid/built-in.a
+  AR      arch/x86/platform/intel-quark/built-in.a
+  AR      arch/x86/platform/olpc/built-in.a
+  AR      arch/x86/platform/scx200/built-in.a
+  AR      arch/x86/platform/ts5500/built-in.a
+  AR      arch/x86/platform/uv/built-in.a
+  AR      arch/x86/platform/built-in.a
+  CC      arch/x86/net/bpf_jit_comp.o
+  CC      arch/x86/kernel/cpu/topology.o
+  CC      arch/x86/kernel/kprobes/ftrace.o
+  CC      kernel/bpf/bpf_iter.o
+  CC      kernel/trace/rpm-traces.o
+  CC      arch/x86/kernel/cpu/proc.o
+  AR      arch/x86/kernel/kprobes/built-in.a
+  CC      kernel/exec_domain.o
+  CC      arch/x86/kernel/cpu/feat_ctl.o
+  CC      kernel/trace/trace_dynevent.o
+  CC      kernel/bpf/map_iter.o
+  CC      mm/shuffle.o
+  CC      arch/x86/kernel/cpu/intel.o
+  AS      arch/x86/net/bpf_timed_may_goto.o
+  AR      arch/x86/net/built-in.a
+  CC      kernel/panic.o
+  CC      kernel/trace/trace_probe.o
+  AS      arch/x86/kernel/head_64.o
+  CC      kernel/bpf/task_iter.o
+  CC      arch/x86/kernel/cpu/tsx.o
+  CC      kernel/cpu.o
+  CC      mm/page_frag_cache.o
+  CC      arch/x86/purgatory/purgatory.o
+  CC      arch/x86/kernel/cpu/intel_epb.o
+  AS      arch/x86/purgatory/stack.o
+  AS      arch/x86/purgatory/setup-x86_64.o
+  CC      arch/x86/purgatory/sha256.o
+  CC      mm/init-mm.o
+  CC      kernel/bpf/prog_iter.o
+  CC      arch/x86/kernel/cpu/amd.o
+  AS      arch/x86/purgatory/entry64.o
+  CC      arch/x86/purgatory/string.o
+  LD      arch/x86/purgatory/purgatory.ro
+  LD      arch/x86/purgatory/purgatory.chk
+  AS      arch/x86/purgatory/kexec-purgatory.o
+  AR      arch/x86/purgatory/built-in.a
+  CC      arch/x86/virt/svm/sev.o
+  CC      mm/memblock.o
+  CC      kernel/trace/trace_btf.o
+  CC      arch/x86/virt/svm/cmdline.o
+  CC      kernel/bpf/link_iter.o
+  CC      kernel/trace/trace_uprobe.o
+  CC      arch/x86/kernel/cpu/amd_cache_disable.o
+  CC      arch/x86/kernel/cpu/hygon.o
+  AR      arch/x86/virt/svm/built-in.a
+  AR      arch/x86/virt/vmx/built-in.a
+  AR      arch/x86/virt/built-in.a
+  CC      arch/x86/kernel/head64.o
+  CC      kernel/exit.o
+  CC      mm/memory_hotplug.o
+  CC      arch/x86/kernel/cpu/centaur.o
+  CC      kernel/bpf/hashtab.o
+  CC      arch/x86/kernel/cpu/zhaoxin.o
+  CC      kernel/trace/fprobe.o
+  CC      arch/x86/kernel/cpu/perfctr-watchdog.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/kvm_main.o
+  CC      arch/x86/kernel/cpu/vmware.o
+  CC      mm/slub.o
+  CC      arch/x86/kernel/ebda.o
+  CC      kernel/trace/rethook.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/eventfd.o
+  CC      arch/x86/kernel/cpu/hypervisor.o
+  CC      kernel/bpf/arraymap.o
+  CC      arch/x86/kernel/cpu/mshyperv.o
+  CC      kernel/trace/trace_fprobe.o
+  CC      mm/madvise.o
+  CC      arch/x86/kernel/cpu/debugfs.o
+  CC      kernel/bpf/percpu_freelist.o
+  CC      kernel/bpf/bpf_lru_list.o
+  CC      arch/x86/kernel/cpu/bus_lock.o
+  AR      kernel/trace/built-in.a
+  CC      arch/x86/kernel/platform-quirks.o
+  CC      kernel/bpf/lpm_trie.o
+  CC      mm/page_io.o
+  CC      kernel/softirq.o
+  CC      arch/x86/kernel/cpu/capflags.o
+  AR      arch/x86/kernel/cpu/built-in.a
+  CC      arch/x86/kernel/process_64.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/binary_stats.o
+  CC      mm/swap_state.o
+  CC      kernel/bpf/map_in_map.o
+  CC      kernel/bpf/bloom_filter.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/vfio.o
+  CC      arch/x86/kernel/signal.o
+  CC      kernel/resource.o
+  CC      mm/swapfile.o
+  CC      kernel/bpf/local_storage.o
+  CC      arch/x86/kernel/signal_64.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/coalesced_mmio.o
+  CC      kernel/sysctl.o
+  CC      kernel/bpf/queue_stack_maps.o
+  CC      arch/x86/kernel/traps.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/async_pf.o
+  CC      mm/zswap.o
+  CC      arch/x86/kernel/idt.o
+  CC      kernel/bpf/ringbuf.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/irqchip.o
+  CC      mm/dmapool.o
+  CC      kernel/capability.o
+  CC      arch/x86/kernel/irq.o
+  CC      kernel/bpf/bpf_local_storage.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/dirty_ring.o
+  CC      kernel/bpf/bpf_task_storage.o
+  CC      mm/hugetlb.o
+  CC      kernel/bpf/bpf_inode_storage.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/pfncache.o
+  CC      arch/x86/kernel/irq_64.o
+  CC      kernel/ptrace.o
+  CC      mm/hugetlb_cma.o
+  CC      kernel/bpf/disasm.o
+  CC      arch/x86/kernel/dumpstack_64.o
+  CC [M]  arch/x86/kvm/../../../virt/kvm/guest_memfd.o
+  CC      mm/hugetlb_vmemmap.o
+  CC      kernel/bpf/mprog.o
+  CC      arch/x86/kernel/time.o
+  CC      arch/x86/kernel/ioport.o
+  CC      mm/mempolicy.o
+  CC [M]  arch/x86/kvm/x86.o
+  CC      kernel/bpf/trampoline.o
+  CC      mm/sparse.o
+  CC      arch/x86/kernel/dumpstack.o
+  CC      arch/x86/kernel/nmi.o
+  CC      kernel/user.o
+  CC      kernel/bpf/btf.o
+  CC      arch/x86/kernel/fred.o
+  CC [M]  arch/x86/kvm/emulate.o
+  CC      kernel/bpf/memalloc.o
+  CC      mm/sparse-vmemmap.o
+  CC      arch/x86/kernel/ldt.o
+  CC      mm/mmu_notifier.o
+  CC      kernel/signal.o
+  AS      arch/x86/kernel/ibt_selftest.o
+  CC      arch/x86/kernel/setup.o
+  CC      mm/ksm.o
+  CC      arch/x86/kernel/x86_init.o
+  CC      kernel/bpf/rqspinlock.o
+  CC      arch/x86/kernel/i8259.o
+  CC      kernel/sys.o
+  CC      arch/x86/kernel/irqinit.o
+  CC      mm/page_poison.o
+  CC      kernel/bpf/stream.o
+  CC      arch/x86/kernel/jump_label.o
+  CC      mm/memtest.o
+  CC [M]  arch/x86/kvm/irq.o
+  CC      arch/x86/kernel/irq_work.o
+  CC      mm/migrate.o
+  CC      kernel/bpf/arena.o
+  CC      kernel/bpf/range_tree.o
+  CC      arch/x86/kernel/probe_roms.o
+  CC      mm/memory-tiers.o
+  CC      arch/x86/kernel/sys_ia32.o
+  CC      kernel/umh.o
+  CC      kernel/bpf/dispatcher.o
+  CC [M]  arch/x86/kvm/lapic.o
+  CC      kernel/workqueue.o
+  CC      arch/x86/kernel/signal_32.o
+  CC      mm/migrate_device.o
+  CC      kernel/bpf/devmap.o
+  CC      mm/huge_memory.o
+  CC      arch/x86/kernel/sys_x86_64.o
+  CC      kernel/pid.o
+  CC      kernel/bpf/cpumap.o
+  CC      arch/x86/kernel/espfix_64.o
+  CC [M]  arch/x86/kvm/cpuid.o
+  CC      arch/x86/kernel/ksysfs.o
+  CC      mm/khugepaged.o
+  CC      kernel/bpf/offload.o
+  CC      arch/x86/kernel/bootflag.o
+  CC [M]  arch/x86/kvm/pmu.o
+  CC      arch/x86/kernel/e820.o
+  CC      mm/page_counter.o
+  CC      kernel/bpf/net_namespace.o
+  CC      kernel/task_work.o
+  CC      arch/x86/kernel/pci-dma.o
+  CC      kernel/bpf/tcx.o
+  CC      mm/memcontrol.o
+  CC [M]  arch/x86/kvm/regs.o
+  CC      arch/x86/kernel/quirks.o
+  CC [M]  arch/x86/kvm/mtrr.o
+  CC      mm/vmpressure.o
+  CC      kernel/bpf/stackmap.o
+  CC      arch/x86/kernel/kdebugfs.o
+  CC [M]  arch/x86/kvm/debugfs.o
+  CC      kernel/extable.o
+  CC      kernel/bpf/cgroup_iter.o
+  CC      arch/x86/kernel/alternative.o
+  CC [M]  arch/x86/kvm/mmu/mmu.o
+  CC [M]  arch/x86/kvm/mmu/page_track.o
+  CC      kernel/bpf/bpf_cgrp_storage.o
+  CC      arch/x86/kernel/i8253.o
+  CC      mm/swap_cgroup.o
+  CC      kernel/bpf/cgroup.o
+  CC      kernel/params.o
+  CC      arch/x86/kernel/hw_breakpoint.o
+  CC      mm/hugetlb_cgroup.o
+  CC [M]  arch/x86/kvm/mmu/spte.o
+  CC      arch/x86/kernel/tsc.o
+  CC      kernel/bpf/reuseport_array.o
+  CC      mm/memory-failure.o
+  CC      mm/page_isolation.o
+  CC      arch/x86/kernel/tsc_msr.o
+  CC      kernel/bpf/sysfs_btf.o
+  CC      kernel/kthread.o
+  CC      arch/x86/kernel/io_delay.o
+  CC [M]  arch/x86/kvm/mmu/tdp_iter.o
+  CC      kernel/bpf/bpf_struct_ops.o
+  CC      arch/x86/kernel/rtc.o
+  CC      mm/zsmalloc.o
+  CC [M]  arch/x86/kvm/mmu/tdp_mmu.o
+  CC      arch/x86/kernel/resource.o
+  CC      kernel/sys_ni.o
+  AS      arch/x86/kernel/irqflags.o
+  CC      arch/x86/kernel/static_call.o
+  CC      kernel/bpf/cpumask.o
+  CC      mm/early_ioremap.o
+  CC      arch/x86/kernel/process.o
+  CC      arch/x86/kernel/ptrace.o
+  CC      kernel/bpf/bpf_lsm.o
+  CC      mm/cma.o
+  CC      kernel/bpf/crypto.o
+  CC [M]  arch/x86/kvm/i8259.o
+  CC      mm/numa.o
+  CC      arch/x86/kernel/tls.o
+  CC      kernel/nsproxy.o
+  CC      kernel/bpf/relo_core.o
+  CC      kernel/bpf/btf_iter.o
+  CC      mm/numa_memblks.o
+  CC [M]  arch/x86/kvm/i8254.o
+  CC      arch/x86/kernel/step.o
+  CC      kernel/nstree.o
+  CC      mm/numa_emulation.o
+  CC [M]  arch/x86/kvm/ioapic.o
+  CC      kernel/bpf/btf_relocate.o
+  CC      arch/x86/kernel/tboot.o
+  CC      mm/balloon_compaction.o
+  CC [M]  arch/x86/kvm/hyperv.o
+  CC      kernel/nscommon.o
+  CC      kernel/bpf/kmem_cache_iter.o
+  CC      mm/page_ext.o
+  CC      kernel/notifier.o
+  CC      arch/x86/kernel/i8237.o
+  CC [M]  arch/x86/kvm/xen.o
+  CC      arch/x86/kernel/stacktrace.o
+  CC      mm/secretmem.o
+  CC      kernel/bpf/dmabuf_iter.o
+  CC      arch/x86/kernel/reboot.o
+  CC      kernel/ksysfs.o
+  AR      kernel/bpf/built-in.a
+  CC      mm/userfaultfd.o
+  CC [M]  arch/x86/kvm/smm.o
+  CC [M]  arch/x86/kvm/kvm_onhyperv.o
+  CC      kernel/cred.o
+  CC      arch/x86/kernel/early-quirks.o
+  CC      mm/usercopy.o
+  CC [M]  arch/x86/kvm/vmx/vmx.o
+  CC      arch/x86/kernel/smp.o
+  CC      kernel/reboot.o
+  CC      mm/memremap.o
+  CC      arch/x86/kernel/smpboot.o
+  CC      arch/x86/kvm/kvm-asm-offsets.s
+  CC      kernel/async.o
+  CC      mm/hmm.o
+  CC      arch/x86/kernel/tsc_sync.o
+  CC      arch/x86/kernel/setup_percpu.o
+  CC [M]  arch/x86/kvm/vmx/pmu_intel.o
+  CC      kernel/range.o
+  CC      mm/memfd.o
+  CC      kernel/smpboot.o
+  CC      arch/x86/kernel/mpparse.o
+  CC [M]  arch/x86/kvm/vmx/vmcs12.o
+  CC      kernel/ucount.o
+  CC      mm/mapping_dirty_helpers.o
+  CC [M]  arch/x86/kvm/vmx/nested.o
+  CC      kernel/regset.o
+  CC      arch/x86/kernel/ftrace.o
+  CC      kernel/ksyms_common.o
+  CC      mm/ptdump.o
+  CC [M]  arch/x86/kvm/vmx/posted_intr.o
+  CC      kernel/groups.o
+  AS      arch/x86/kernel/ftrace_64.o
+  CC      arch/x86/kernel/trace_clock.o
+  CC      mm/page_reporting.o
+  CC      arch/x86/kernel/trace.o
+  CC      arch/x86/kernel/rethook.o
+  CC [M]  arch/x86/kvm/vmx/main.o
+  CC      kernel/vhost_task.o
+  CC      mm/bootmem_info.o
+  CC      kernel/kcmp.o
+  CC      arch/x86/kernel/vmcore_info_64.o
+  CC      mm/execmem.o
+  CC [M]  arch/x86/kvm/vmx/sgx.o
+  CC      arch/x86/kernel/machine_kexec_64.o
+  CC      kernel/freezer.o
+  CC      mm/pt_reclaim.o
+  AS      arch/x86/kernel/relocate_kernel_64.o
+  CC      arch/x86/kernel/kexec-bzimage64.o
+  CC [M]  arch/x86/kvm/vmx/hyperv.o
+  CC      kernel/profile.o
+  CC [M]  mm/hwpoison-inject.o
+  CC      kernel/stacktrace.o
+  CC      arch/x86/kernel/crash_dump_64.o
+  CC [M]  arch/x86/kvm/vmx/hyperv_evmcs.o
+  CC      kernel/dma.o
+  AR      mm/built-in.a
+  CC [M]  arch/x86/kvm/vmx/vmx_onhyperv.o
+  CC      arch/x86/kernel/crash.o
+  CC      arch/x86/kernel/module.o
+  CC      kernel/smp.o
+  CC [M]  arch/x86/kvm/svm/svm.o
+  CC      arch/x86/kernel/early_printk.o
+  CC      kernel/uid16.o
+  CC      arch/x86/kernel/hpet.o
+  CC      kernel/module_signature.o
+  UPD     arch/x86/kvm/kvm-asm-offsets.h
+  CC      arch/x86/kernel/amd_nb.o
+  CC      kernel/kallsyms.o
+  CC [M]  arch/x86/kvm/svm/pmu.o
+  CC      arch/x86/kernel/amd_node.o
+  CC      kernel/acct.o
+  CC [M]  arch/x86/kvm/svm/nested.o
+  CC      arch/x86/kernel/kvm.o
+  CC      kernel/vmcore_info.o
+  CC      arch/x86/kernel/kvmclock.o
+  CC [M]  arch/x86/kvm/svm/avic.o
+  CC      kernel/elfcorehdr.o
+  CC      kernel/crash_reserve.o
+  CC [M]  arch/x86/kvm/svm/sev.o
+  CC [M]  arch/x86/kvm/svm/hyperv.o
+  CC      arch/x86/kernel/paravirt.o
+  CC      kernel/kexec_core.o
+  CC      arch/x86/kernel/paravirt-spinlocks.o
+  CC [M]  arch/x86/kvm/svm/svm_onhyperv.o
+  LD [M]  arch/x86/kvm/kvm.o
+  CC      kernel/crash_core.o
+  CC      arch/x86/kernel/pvclock.o
+  AS [M]  arch/x86/kvm/vmx/vmenter.o
+  CC      kernel/kexec.o
+  CC      arch/x86/kernel/pmem.o
+  AS [M]  arch/x86/kvm/svm/vmenter.o
+  CC      kernel/kexec_file.o
+  LD [M]  arch/x86/kvm/kvm-intel.o
+  CC      kernel/compat.o
+  CC      arch/x86/kernel/pcspeaker.o
+  CC      kernel/utsname.o
+  CC      arch/x86/kernel/uprobes.o
+  CC      arch/x86/kernel/perf_regs.o
+  CC      arch/x86/kernel/itmt.o
+  CC      kernel/user_namespace.o
+  CC      kernel/pid_namespace.o
+  CC      kernel/stop_machine.o
+  LD [M]  arch/x86/kvm/kvm-amd.o
+  CC      kernel/audit.o
+  CC      arch/x86/kernel/umip.o
+  CC      kernel/auditfilter.o
+  CC      kernel/auditsc.o
+  CC      arch/x86/kernel/unwind_orc.o
+  CC      kernel/audit_watch.o
+  CC      arch/x86/kernel/callthunks.o
+  CC      kernel/audit_fsnotify.o
+  CC      arch/x86/kernel/cet.o
+  CC      arch/x86/kernel/shstk.o
+  CC      kernel/audit_tree.o
+  CC      arch/x86/kernel/audit_64.o
+  CC      kernel/kprobes.o
+  CC      arch/x86/kernel/amd_gart_64.o
+  CC      kernel/hung_task.o
+  CC      arch/x86/kernel/aperture_64.o
+  CC      kernel/watchdog.o
+  CC      arch/x86/kernel/mmconf-fam10h_64.o
+  CC      kernel/watchdog_perf.o
+  CC      arch/x86/kernel/vsmp_64.o
+  CC      kernel/seccomp.o
+  CC [M]  arch/x86/kernel/msr.o
+  CC      kernel/relay.o
+  CC [M]  arch/x86/kernel/cpuid.o
+  CC      kernel/utsname_sysctl.o
+  CC      kernel/delayacct.o
+  CC      kernel/taskstats.o
+  LDS     arch/x86/kernel/vmlinux.lds
+  CC      kernel/tsacct.o
+  AR      arch/x86/kernel/built-in.a
+  AR      arch/x86/built-in.a
+  CC      kernel/tracepoint.o
+  CC      kernel/irq_work.o
+  CC      kernel/static_call.o
+  CC      kernel/static_call_inline.o
+  CC      kernel/user-return-notifier.o
+  CC      kernel/padata.o
+  CC      kernel/jump_label.o
+  CC      kernel/context_tracking.o
+  CC      kernel/iomem.o
+  CC      kernel/rseq.o
+  AR      kernel/built-in.a
+make[1]: *** [/work/package-production/Makefile:2053: .] Error 2
+make: *** [Makefile:251: __sub-make] Error 2

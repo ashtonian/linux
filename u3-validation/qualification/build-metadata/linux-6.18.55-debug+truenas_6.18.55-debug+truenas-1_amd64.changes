@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Sun, 18 Oct 2026 09:44:37 +0000
+Source: linux-6.18.55-debug+truenas
+Binary: linux-headers-truenas-debug-amd64 linux-image-truenas-debug-amd64 linux-image-truenas-debug-amd64-dbg linux-truenas-debug-libc-dev
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 6.18.55-debug+truenas-1
+Distribution: sid
+Urgency: low
+Maintainer: Debian Packages List <debian.packages@ixsystems.com>
+Changed-By: Debian Packages List <debian.packages@ixsystems.com>
+Description:
+ linux-headers-truenas-debug-amd64 - Linux kernel headers for 6.18.55-debug+truenas on amd64
+ linux-image-truenas-debug-amd64 - Linux kernel, version 6.18.55-debug+truenas
+ linux-image-truenas-debug-amd64-dbg - Linux kernel debugging symbols for 6.18.55-debug+truenas
+ linux-truenas-debug-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-6.18.55-debug+truenas (6.18.55-debug+truenas-1) sid; urgency=low
+ .
+   * Build TrueNAS debug kernel
+Checksums-Sha1:
+ dbd090f26262c550d3372d369f16ba506689d04d 9518 linux-6.18.55-debug+truenas_6.18.55-debug+truenas-1_amd64.buildinfo
+ e001fd56948c84cca6bf00a948fd9b10160cfcad 16477384 linux-headers-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb
+ 2a8ecb0ab731c619097daece1afd384f5ceceae7 2149710152 linux-image-truenas-debug-amd64-dbg_6.18.55-debug+truenas-1_amd64.deb
+ abf8c54051078ebca2e93e2923cf2bc24331d450 142262334 linux-image-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb
+ 0cc7e0861ebda09dc493f5550e19bfb1aa62df74 2294628 linux-truenas-debug-libc-dev_6.18.55-debug+truenas-1_amd64.deb
+Checksums-Sha256:
+ d519d65398e44d7722cd914002c986fade07d59d9ff880c9be33bdaf0c432569 9518 linux-6.18.55-debug+truenas_6.18.55-debug+truenas-1_amd64.buildinfo
+ 06cdae7ed60046040c9619a047cd0bfbadd8f6b26e8635e9422f2421a4471a26 16477384 linux-headers-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb
+ e7cda37d7728e83e117c6823febb04bf1fa9e9c40f4995da896bb5e9927a8058 2149710152 linux-image-truenas-debug-amd64-dbg_6.18.55-debug+truenas-1_amd64.deb
+ f27bd3765451d851ea03aeb54cb0eecf982385a4b919c730a12bcc2fb43585d1 142262334 linux-image-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb
+ 9b459079795173ad105605288cde68fec50de7fa3e90a205fd827b4e7b16106d 2294628 linux-truenas-debug-libc-dev_6.18.55-debug+truenas-1_amd64.deb
+Files:
+ 8f1f63870790d4dcf453c38fe211e851 9518 kernel optional linux-6.18.55-debug+truenas_6.18.55-debug+truenas-1_amd64.buildinfo
+ 605dfc204ff36afb16b353c7cddf0e93 16477384 kernel optional linux-headers-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb
+ 024468319145a3cfb27b30a730a0a364 2149710152 debug optional linux-image-truenas-debug-amd64-dbg_6.18.55-debug+truenas-1_amd64.deb
+ a65eab7a881de1a205f4c9331e01fa49 142262334 kernel optional linux-image-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb
+ 7975a56ea07a729f9788a1741aecdc7c 2294628 devel optional linux-truenas-debug-libc-dev_6.18.55-debug+truenas-1_amd64.deb

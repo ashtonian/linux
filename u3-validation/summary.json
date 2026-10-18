@@ -1,5 +1,5 @@
 {
-  "recorded_at_utc": "2026-10-18T08:38:21.726038+00:00",
+  "recorded_at_utc": "2026-10-18T10:12:28.820876+00:00",
   "base_sha": "e43b65255bec4614c14447eb6152711e3e6e8124",
   "head_sha": "9d9d9d7bd620d4c8ef6358e163ca78949e11c2f2",
   "tree_sha": "1fcc3c15535108f29d430f22e7546a55c5065130",
@@ -28,7 +28,12 @@
     "seven_target_objects": "PASS: W=1, x86_64 cross compilation; target-build.log",
     "target_directory": "PASS: W=1, configured target directory compilation and relocatable linking; target-build-final.log",
     "checkpatch_strict": "PASS: zero errors/warnings/checks on cumulative diff",
-    "local_signatures": "PASS: all eight commits"
+    "local_signatures": "PASS: all eight commits",
+    "github_signatures": "PASS: all eight candidate commits and evidence commit verified, reason valid",
+    "production_packages": "PASS: binary package recipe exit 0, five packages",
+    "debug_packages": "PASS: bindeb-pkg exit 0, four packages",
+    "production_guest": "PASS: 36 result records",
+    "debug_guest": "PASS: 36 result records, UBSan bounds/shift enabled"
   },
   "assertions_passed": 1235,
   "limits": {
@@ -38,19 +43,17 @@
     "param_mdts": "0..255; nonzero settings can lower the transport advertisement; active-port writes fail"
   },
   "not_run": [
-    "full kernel/image packaging",
-    "module modpost/install/load",
-    "boot",
-    "real configfs updates",
-    "API/migration integration",
-    "NVMe command tracing",
-    "live integrity/pressure/durability",
-    "fencing",
-    "network fragmentation/digest integration",
-    "accelerated kernel CRC and TLS qualification",
-    "aggregate memory-budget qualification"
+    "full TrueNAS appliance image integration",
+    "middleware/API/migration integration",
+    "TLS",
+    "pressure and aggregate memory-budget qualification",
+    "durability and fencing",
+    "physical-hardware/performance qualification",
+    "live 4 MiB allocation-guard boundary"
   ],
-  "limitations": "Extracted source with stubbed kernel APIs and reference CRC32C; no kernel/configfs/network/runtime proof. Advertisement is not per-command enforcement below the 4 MiB allocation guard.",
+  "limitations": "Offline harnesses use stubbed kernel APIs. Separate local cross-build and QEMU guest evidence now exercises real configfs, Identify, command sizes, split-PDU CRCs, passthrough and teardown. No full appliance, TLS, pressure or durability proof. Existing perf package dependency metadata is incomplete. Advertisement is not per-command enforcement below 4 MiB.",
   "upstream_pr_opened": false,
-  "provenance": "Two merged generic MDTS backports; Alfonso Kuen MDTS v3 and size cleanup v2 preserve authorship and review tags. Cleanup sign-off email restored from author header per review; changelog removed from commit message. Generic store declaration alignment corrected. No altered policy inherits upstream review tags."
+  "provenance": "Two merged generic MDTS backports; Alfonso Kuen MDTS v3 and size cleanup v2 preserve authorship and review tags. Cleanup sign-off email restored from author header per review; changelog removed from commit message. Generic store declaration alignment corrected. No altered policy inherits upstream review tags.",
+  "offline_recorded_at_utc": "2026-10-18T08:38:21.726038+00:00",
+  "package_and_guest_qualification": "qualification/summary.json"
 }

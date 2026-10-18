@@ -1,0 +1,499 @@
+[    0.000000] Linux version 6.18.55-production+truenas (root@83a77792ced5) (x86_64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #1 SMP PREEMPT_DYNAMIC Sun Oct 18 09:45:29 UTC 2026
+[    0.000000] Command line: console=ttyS0 earlyprintk=serial,ttyS0,115200 edd=off loglevel=6 panic=1 rdinit=/init u3_disposable=1
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffd6fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007ffd7000-0x000000007fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000b0000000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+[    0.000000] printk: legacy bootconsole [earlyser0] enabled
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] DMI: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 1.15.0-1 04/01/2014
+[    0.000000] DMI: Memory slots populated: 1/1
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] tsc: Detected 1000.003 MHz processor
+[    0.004717] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.004931] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.006322] AGP: No AGP bridge found
+[    0.006512] last_pfn = 0x140000 max_arch_pfn = 0x10000000000
+[    0.007036] MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+[    0.007192] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.008955] last_pfn = 0x7ffd7 max_arch_pfn = 0x10000000000
+[    0.021074] found SMP MP-table at [mem 0x000f5ba0-0x000f5baf]
+[    0.022305] Using GB pages for direct mapping
+[    0.025186] RAMDISK: [mem 0x78d30000-0x7ffcffff]
+[    0.025486] ACPI: Early table checksum verification disabled
+[    0.025735] ACPI: RSDP 0x00000000000F59D0 000014 (v00 BOCHS )
+[    0.026003] ACPI: RSDT 0x000000007FFE22B3 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.026427] ACPI: FACP 0x000000007FFE20A3 0000F4 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.026894] ACPI: DSDT 0x000000007FFE0040 002063 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.026974] ACPI: FACS 0x000000007FFE0000 000040
+[    0.027035] ACPI: APIC 0x000000007FFE2197 000080 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.027072] ACPI: HPET 0x000000007FFE2217 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.027105] ACPI: MCFG 0x000000007FFE224F 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.027134] ACPI: WAET 0x000000007FFE228B 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.027214] ACPI: Reserving FACP table memory at [mem 0x7ffe20a3-0x7ffe2196]
+[    0.027238] ACPI: Reserving DSDT table memory at [mem 0x7ffe0040-0x7ffe20a2]
+[    0.027249] ACPI: Reserving FACS table memory at [mem 0x7ffe0000-0x7ffe003f]
+[    0.027257] ACPI: Reserving APIC table memory at [mem 0x7ffe2197-0x7ffe2216]
+[    0.027265] ACPI: Reserving HPET table memory at [mem 0x7ffe2217-0x7ffe224e]
+[    0.027274] ACPI: Reserving MCFG table memory at [mem 0x7ffe224f-0x7ffe228a]
+[    0.027283] ACPI: Reserving WAET table memory at [mem 0x7ffe228b-0x7ffe22b2]
+[    0.029381] No NUMA configuration found
+[    0.029438] Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+[    0.030558] NODE_DATA(0) allocated [mem 0x13ffd29c0-0x13fffdfff]
+[    0.032068] cma: Reserved 256 MiB at 0x0000000100000000
+[    0.035388] Zone ranges:
+[    0.035436]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.035526]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.035543]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.035560]   Device   empty
+[    0.035589] Movable zone start for each node
+[    0.035630] Early memory node ranges
+[    0.035659]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.035755]   node   0: [mem 0x0000000000100000-0x000000007ffd6fff]
+[    0.035789]   node   0: [mem 0x0000000100000000-0x000000013fffffff]
+[    0.035876] Initmem setup node 0 [mem 0x0000000000001000-0x000000013fffffff]
+[    0.037026] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.037235] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.084076] On node 0, zone Normal: 41 pages in unavailable ranges
+[    0.084602] ACPI: PM-Timer IO Port: 0x608
+[    0.085011] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.085381] IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+[    0.085494] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.085730] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.085769] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.085842] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.085855] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.086021] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.086059] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.086317] CPU topo: Max. logical packages:   1
+[    0.086334] CPU topo: Max. logical dies:       1
+[    0.086344] CPU topo: Max. dies per package:   1
+[    0.086389] CPU topo: Max. threads per core:   1
+[    0.086506] CPU topo: Num. cores per package:     2
+[    0.086521] CPU topo: Num. threads per package:   2
+[    0.086533] CPU topo: Allowing 2 present CPUs plus 0 hotplug CPUs
+[    0.087223] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.087260] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[    0.087272] PM: hibernation: Registered nosave memory: [mem 0x7ffd7000-0xffffffff]
+[    0.087387] [mem 0xc0000000-0xfed1bfff] available for PCI devices
+[    0.087427] Booting paravirtualized kernel on bare hardware
+[    0.087675] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.099455] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+[    0.101143] percpu: Embedded 62 pages/cpu s217088 r8192 d28672 u1048576
+[    0.101477] pcpu-alloc: s217088 r8192 d28672 u1048576 alloc=1*2097152
+[    0.101568] pcpu-alloc: [0] 0 1 
+[    0.102265] Kernel command line: console=ttyS0 earlyprintk=serial,ttyS0,115200 edd=off loglevel=6 panic=1 rdinit=/init u3_disposable=1
+[    0.103516] Unknown kernel command line parameters "edd=off u3_disposable=1", will be passed to user space.
+[    0.104140] random: crng init done
+[    0.104269] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+[    0.105919] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.106583] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.109221] AGP: Checking aperture...
+[    0.110460] AGP: No AGP bridge found
+[    0.111045] software IO TLB: area num 2.
+[    0.148815] Fallback order for Node 0: 0 
+[    0.149145] Built 1 zonelists, mobility grouping on.  Total pages: 786293
+[    0.149190] Policy zone: Normal
+[    0.149587] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.202558] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.236837] ftrace: allocating 47928 entries in 188 pages
+[    0.237092] ftrace: allocated 188 pages with 5 groups
+[    0.243840] Dynamic Preempt: lazy
+[    0.248884] rcu: Preemptible hierarchical RCU implementation.
+[    0.248920] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+[    0.249032] 	Trampoline variant of Tasks RCU enabled.
+[    0.249043] 	Rude variant of Tasks RCU enabled.
+[    0.249051] 	Tracing variant of Tasks RCU enabled.
+[    0.249113] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.249135] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.250010] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.250037] RCU Tasks Rude: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.250052] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.288913] NR_IRQS: 524544, nr_irqs: 440, preallocated irqs: 16
+[    0.296100] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.296555] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.301622] Console: colour *CGA 80x25
+[    0.303041] printk: legacy console [ttyS0] enabled
+[    0.303108] printk: legacy bootconsole [earlyser0] disabled
+[    0.304153] ACPI: Core revision 20250807
+[    0.308508] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.309602] APIC: Switch to symmetric I/O mode setup
+[    0.312531] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.329486] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0xe6a19e43e4, max_idle_ns: 440795215955 ns
+[    0.329831] Calibrating delay loop (skipped), value calculated using timer frequency.. 2000.00 BogoMIPS (lpj=4000012)
+[    0.338361] Last level iTLB entries: 4KB 512, 2MB 255, 4MB 127
+[    0.340019] Last level dTLB entries: 4KB 512, 2MB 255, 4MB 127, 1GB 0
+[    0.341795] mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[    0.342461] Spectre V2 : Mitigation: Retpolines
+[    0.342632] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.342717] Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+[    0.343890] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.346959] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.347016] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.347032] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.347082] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[    0.347185] x86/fpu: xstate_offset[3]:  960, xstate_sizes[3]:   64
+[    0.347337] x86/fpu: xstate_offset[4]: 1024, xstate_sizes[4]:   64
+[    0.347350] x86/fpu: xstate_offset[9]: 2688, xstate_sizes[9]:    8
+[    0.347370] x86/fpu: Enabled xstate features 0x21b, context size is 2696 bytes, using 'standard' format.
+[    0.508662] Freeing SMP alternatives memory: 44K
+[    0.509993] pid_max: default: 32768 minimum: 301
+[    0.516829] LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,tomoyo,bpf,ipe,ima,evm
+[    0.519239] landlock: Up and running.
+[    0.519263] Yama: becoming mindful.
+[    0.522121] AppArmor: AppArmor initialized
+[    0.522295] TOMOYO Linux initialized
+[    0.523358] LSM support for eBPF active
+[    0.525642] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.525642] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.642565] smpboot: CPU0: AMD QEMU TCG CPU version 2.5+ (family: 0xf, model: 0x6b, stepping: 0x1)
+[    0.650452] Performance Events: PMU not available due to virtualization, using software events only.
+[    0.651260] signal: max sigframe size: 3632
+[    0.652314] rcu: Hierarchical SRCU implementation.
+[    0.652344] rcu: 	Max phase no-delay instances is 1000.
+[    0.653692] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.658897] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.660285] smp: Bringing up secondary CPUs ...
+[    0.665606] smpboot: x86: Booting SMP configuration:
+[    0.665642] .... node  #0, CPUs:      #1
+[    0.017167] calibrate_delay_direct() dropping max bogoMips estimate 3 = 14907640
+[    0.017167] calibrate_delay_direct() dropping min bogoMips estimate 0 = 3786180
+[    0.017167] calibrate_delay_direct() dropping min bogoMips estimate 4 = 4049614
+[    0.766561] smp: Brought up 1 node, 2 CPUs
+[    0.766561] smpboot: Total of 2 processors activated (4398.92 BogoMIPS)
+[    0.782655] node 0 deferred pages initialised in 8ms
+[    0.786839] Memory: 2585528K/3145172K available (16927K kernel code, 3313K rwdata, 12456K rodata, 4556K init, 5284K bss, 293604K reserved, 262144K cma-reserved)
+[    0.794409] devtmpfs: initialized
+[    0.798213] x86/mm: Memory block size: 128MB
+[    0.804909] posixtimers hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.805136] futex hash table entries: 512 (32768 bytes on 1 NUMA nodes, total 32 KiB, linear).
+[    0.810210] pinctrl core: initialized pinctrl subsystem
+[    0.825958] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.832210] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.832500] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.834006] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.834160] audit: initializing netlink subsys (disabled)
+[    0.837880] audit: type=2000 audit(1792317434.524:1): state=initialized audit_enabled=0 res=1
+[    0.839525] thermal_sys: Registered thermal governor 'fair_share'
+[    0.840107] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.840137] thermal_sys: Registered thermal governor 'step_wise'
+[    0.840145] thermal_sys: Registered thermal governor 'user_space'
+[    0.840150] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.840689] cpuidle: using governor ladder
+[    0.840689] cpuidle: using governor menu
+[    0.842078] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.843956] PCI: ECAM [mem 0xb0000000-0xbfffffff] (base 0xb0000000) for domain 0000 [bus 00-ff]
+[    0.844412] PCI: ECAM [mem 0xb0000000-0xbfffffff] reserved as E820 entry
+[    0.845642] PCI: Using configuration type 1 for base access
+[    0.845805] mtrr: your CPUs had inconsistent fixed MTRR settings
+[    0.845936] mtrr: your CPUs had inconsistent variable MTRR settings
+[    0.846052] mtrr: your CPUs had inconsistent MTRRdefType settings
+[    0.846146] mtrr: probably your BIOS does not setup all CPUs.
+[    0.846156] mtrr: corrected configuration.
+[    0.846850] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.866245] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.869701] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.869742] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.869750] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.962145] ACPI: Added _OSI(Module Device)
+[    0.962218] ACPI: Added _OSI(Processor Device)
+[    0.962233] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.974122] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.988079] ACPI: Interpreter enabled
+[    0.990288] ACPI: PM: (supports S0 S3 S4 S5)
+[    0.990332] ACPI: Using IOAPIC for interrupt routing
+[    0.991339] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.991384] PCI: Using E820 reservations for host bridge windows
+[    0.993249] ACPI: Enabled 2 GPEs in block 00 to 3F
+[    1.011029] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.011388] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    1.012130] acpi PNP0A08:00: _OSC: platform does not support [PCIeHotplug LTR]
+[    1.013657] acpi PNP0A08:00: _OSC: OS now controls [SHPCHotplug PME AER PCIeCapability]
+[    1.016567] PCI host bridge to bus 0000:00
+[    1.016745] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    1.016833] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    1.016844] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    1.016854] pci_bus 0000:00: root bus resource [mem 0x80000000-0xafffffff window]
+[    1.016863] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    1.016871] pci_bus 0000:00: root bus resource [mem 0x140000000-0x93fffffff window]
+[    1.016993] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.018219] pci 0000:00:00.0: [8086:29c0] type 00 class 0x060000 conventional PCI endpoint
+[    1.023760] pci 0000:00:01.0: [1b36:0010] type 00 class 0x010802 PCIe Root Complex Integrated Endpoint
+[    1.025692] pci 0000:00:01.0: BAR 0 [mem 0xfebf8000-0xfebfbfff 64bit]
+[    1.027047] pci 0000:00:1f.0: [8086:2918] type 00 class 0x060100 conventional PCI endpoint
+[    1.027388] pci 0000:00:1f.0: quirk: [io  0x0600-0x067f] claimed by ICH6 ACPI/GPIO/TCO
+[    1.028963] pci 0000:00:1f.2: [8086:2922] type 00 class 0x010601 conventional PCI endpoint
+[    1.029642] pci 0000:00:1f.2: BAR 4 [io  0xc040-0xc05f]
+[    1.029642] pci 0000:00:1f.2: BAR 5 [mem 0xfebfc000-0xfebfcfff]
+[    1.029642] pci 0000:00:1f.3: [8086:2930] type 00 class 0x0c0500 conventional PCI endpoint
+[    1.029642] pci 0000:00:1f.3: BAR 4 [io  0x0700-0x073f]
+[    1.032420] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[    1.033775] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    1.034107] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    1.034388] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    1.034636] ACPI: PCI: Interrupt link LNKE configured for IRQ 10
+[    1.034818] ACPI: PCI: Interrupt link LNKF configured for IRQ 10
+[    1.035030] ACPI: PCI: Interrupt link LNKG configured for IRQ 11
+[    1.035314] ACPI: PCI: Interrupt link LNKH configured for IRQ 11
+[    1.035382] ACPI: PCI: Interrupt link GSIA configured for IRQ 16
+[    1.035420] ACPI: PCI: Interrupt link GSIB configured for IRQ 17
+[    1.035455] ACPI: PCI: Interrupt link GSIC configured for IRQ 18
+[    1.035496] ACPI: PCI: Interrupt link GSID configured for IRQ 19
+[    1.035542] ACPI: PCI: Interrupt link GSIE configured for IRQ 20
+[    1.035586] ACPI: PCI: Interrupt link GSIF configured for IRQ 21
+[    1.035638] ACPI: PCI: Interrupt link GSIG configured for IRQ 22
+[    1.035711] ACPI: PCI: Interrupt link GSIH configured for IRQ 23
+[    1.039227] iommu: Default domain type: Translated
+[    1.039227] iommu: DMA domain TLB invalidation policy: lazy mode
+[    1.043445] pps_core: LinuxPPS API ver. 1 registered
+[    1.043471] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.043507] PTP clock support registered
+[    1.043812] EDAC MC: Ver: 3.0.0
+[    1.051441] NetLabel: Initializing
+[    1.051478] NetLabel:  domain hash size = 128
+[    1.051493] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.051955] NetLabel:  unlabeled traffic allowed by default
+[    1.051998] PCI: Using ACPI for IRQ routing
+[    1.054021] PCI: pci_cache_line_size set to 64 bytes
+[    1.054486] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    1.054616] e820: reserve RAM buffer [mem 0x7ffd7000-0x7fffffff]
+[    1.058592] vgaarb: loaded
+[    1.058684] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    1.058881] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    1.063948] clocksource: Switched to clocksource tsc-early
+[    1.064427] VFS: Disk quotas dquot_6.6.0
+[    1.064642] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.072969] AppArmor: AppArmor Filesystem Enabled
+[    1.073341] pnp: PnP ACPI init
+[    1.076398] system 00:03: [mem 0xb0000000-0xbfffffff window] has been reserved
+[    1.077690] pnp: PnP ACPI: found 4 devices
+[    1.123486] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    1.124480] NET: Registered PF_INET protocol family
+[    1.127070] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    1.192282] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    1.192417] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.192471] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.192758] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    1.194167] TCP: Hash tables configured (established 32768 bind 32768)
+[    1.228592] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    1.231661] UDP hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    1.231902] UDP-Lite hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    1.233822] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.234161] NET: Registered PF_XDP protocol family
+[    1.234726] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    1.234755] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    1.234765] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    1.234776] pci_bus 0000:00: resource 7 [mem 0x80000000-0xafffffff window]
+[    1.234785] pci_bus 0000:00: resource 8 [mem 0xc0000000-0xfebfffff window]
+[    1.234794] pci_bus 0000:00: resource 9 [mem 0x140000000-0x93fffffff window]
+[    1.235142] PCI: CLS 0 bytes, default 64
+[    1.235534] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    1.235554] software IO TLB: mapped [mem 0x0000000074d30000-0x0000000078d30000] (64MB)
+[    1.243043] Unpacking initramfs...
+[    1.267052] Initialise system trusted keyrings
+[    1.277366] Key type blacklist registered
+[    1.281971] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+[    1.290735] fuse: init (API version 7.45)
+[    1.333281] integrity: Platform Keyring initialized
+[    1.333539] integrity: Machine keyring initialized
+[    1.620784] Key type asymmetric registered
+[    1.621386] Asymmetric key parser 'x509' registered
+[    1.654543] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    1.656159] io scheduler mq-deadline registered
+[    1.676169] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.689098] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    1.729585] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    1.740263] Linux agpgart interface v0.103
+[    1.754032] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    1.769824] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.770011] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.771507] mousedev: PS/2 mouse device common for all mice
+[    1.772477] rtc_cmos PNP0B00:00: RTC can wake from S4
+[    1.779808] rtc_cmos PNP0B00:00: registered as rtc0
+[    1.780196] rtc_cmos PNP0B00:00: setting system clock to 2026-10-18T09:57:16 UTC (1792317436)
+[    1.781127] rtc_cmos PNP0B00:00: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[    1.785875] amd_pstate: the _CPC object is not present in SBIOS or ACPI disabled
+[    1.787827] NET: Registered PF_INET6 protocol family
+[    1.796929] Segment Routing with IPv6
+[    1.796978] RPL Segment Routing with IPv6
+[    1.797086] In-situ OAM (IOAM) with IPv6
+[    1.820029] mip6: Mobile IPv6
+[    1.820564] NET: Registered PF_PACKET protocol family
+[    1.823506] mpls_gso: MPLS GSO support
+[    1.826865] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    1.842388] IPI shorthand broadcast: enabled
+[    1.870201] sched_clock: Marking stable (1856035006, 13167929)->(2126868905, -257665970)
+[    1.882357] registered taskstats version 1
+[    1.886400] Loading compiled-in X.509 certificates
+[    2.042052] Loaded X.509 cert 'Build time autogenerated kernel key: 3b7cd00a078a26373fae2e711eb1b1f51e36a3f5'
+[    2.042685] Loaded X.509 cert 'TrueNAS SCALE Signing Key: defc6ebf66ad1e53ccfa7162de16d9b3fc3a7f14'
+[    2.061556] Demotion targets for Node 0: null
+[    2.062428] Key type .fscrypt registered
+[    2.062551] Key type fscrypt-provisioning registered
+[    2.237340] tsc: Refined TSC clocksource calibration: 999.989 MHz
+[    2.237614] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1cd41967d78, max_idle_ns: 881590404252 ns
+[    2.241375] clocksource: Switched to clocksource tsc
+[    6.736232] Freeing initrd memory: 117376K
+[    7.158851] Key type encrypted registered
+[    7.159037] AppArmor: AppArmor sha256 policy hashing enabled
+[    7.159400] ima: No TPM chip found, activating TPM-bypass!
+[    7.159449] ima: Allocated hash algorithm: sha256
+[    7.162954] ima: No architecture policies found
+[    7.163378] evm: Initialising EVM extended attributes:
+[    7.163399] evm: security.selinux
+[    7.163424] evm: security.SMACK64 (disabled)
+[    7.163430] evm: security.SMACK64EXEC (disabled)
+[    7.163436] evm: security.SMACK64TRANSMUTE (disabled)
+[    7.163442] evm: security.SMACK64MMAP (disabled)
+[    7.163448] evm: security.apparmor
+[    7.163453] evm: security.ima
+[    7.163458] evm: security.capability
+[    7.163468] evm: HMAC attrs: 0x1
+[    7.490657] RAS: Correctable Errors collector initialized.
+[    7.833432] clk: Disabling unused clocks
+[    7.833590] PM: genpd: Disabling unused power domains
+[    8.155674] Freeing unused decrypted memory: 2028K
+[    8.273663] Freeing unused kernel image (initmem) memory: 4556K
+[    8.273914] Write protecting the kernel read-only data: 32768k
+[    8.320966] Freeing unused kernel image (text/rodata gap) memory: 1504K
+[    8.335286] Freeing unused kernel image (rodata/data gap) memory: 1880K
+[    8.490314] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    8.490564] Run /init as init process
+[    8.490629]   with arguments:
+[    8.490662]     /init
+[    8.490678]   with environment:
+[    8.490692]     HOME=/
+[    8.490703]     TERM=linux
+[    8.490711]     edd=off
+[    8.490717]     u3_disposable=1
+[    9.091013] Key type psk registered
+[    9.179909] nvme nvme0: pci function 0000:00:01.0
+[    9.184243] ACPI: \_SB_.GSIF: Enabled at IRQ 21
+[    9.235683] nvme nvme0: 2/0/0 default/read/poll queues
+[    9.240589] nvme nvme0: Ignoring bogus Namespace Identifiers
+[   10.480431] nvmet: adding nsid 1 to subsystem nqn.2026-10.test:u3-file
+[   10.485673] nvmet: Invalid value '-1' for mdts, should be 0-255
+[   10.486042] nvmet: Invalid value '-1' for mdts, should be 0-255
+[   10.487062] nvmet: Invalid value '256' for mdts, should be 0-255
+[   10.487196] nvmet: Invalid value '256' for mdts, should be 0-255
+[   10.487841] nvmet: Invalid value '2147483648' for mdts, should be 0-255
+[   10.487962] nvmet: Invalid value '2147483648' for mdts, should be 0-255
+[   10.488586] nvmet: Invalid value 'bad' for mdts, should be 0-255
+[   10.488702] nvmet: Invalid value 'bad' for mdts, should be 0-255
+[   10.493800] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   10.642683] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   10.650716] nvme nvme1: creating 1 I/O queues.
+[   10.652207] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   10.654283] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   10.830078] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   10.830375] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   10.860124] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   10.965155] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   11.057658] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   11.059211] nvme nvme1: ANA log page size (8208) larger than MDTS (8192).
+[   11.059354] nvme nvme1: disabling ANA support.
+[   11.059809] nvme nvme1: creating 1 I/O queues.
+[   11.060592] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   11.061648] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   11.224840] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   11.225108] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   11.254394] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   11.358824] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   11.453128] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   11.455682] nvme nvme1: creating 1 I/O queues.
+[   11.456615] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   11.457593] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   11.543882] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   11.544197] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   11.574070] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   11.687549] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   11.792531] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   11.794807] nvme nvme1: creating 1 I/O queues.
+[   11.795640] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   11.796447] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   11.944355] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   11.947116] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.024267] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   12.136915] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   12.251743] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   12.254548] nvme nvme1: creating 1 I/O queues.
+[   12.255404] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   12.256463] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   12.343295] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.343593] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.376681] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   12.464990] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   12.574109] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   12.578059] nvme nvme1: creating 1 I/O queues.
+[   12.579171] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   12.580069] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   12.660374] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.660664] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.688300] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   12.799133] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   12.884113] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   12.886715] nvme nvme1: creating 1 I/O queues.
+[   12.887659] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   12.888709] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   12.966383] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.966679] nvmet: Disable port '1' before changing attribute in nvmet_param_mdts_store
+[   12.994907] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   13.124025] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[   13.863126] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   14.074778] nvme nvme1: creating 1 I/O queues.
+[   14.089852] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   14.093799] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4421, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   22.971581] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   23.220467] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   23.446516] nvme nvme1: creating 1 I/O queues.
+[   23.456532] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   23.463550] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4421, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   61.231780] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   62.338639] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   62.540188] nvme nvme1: creating 1 I/O queues.
+[   62.548552] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   62.558714] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4422, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[   69.935582] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[   70.230014] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[   70.483152] nvme nvme1: creating 1 I/O queues.
+[   70.489653] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[   70.498728] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4422, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[  109.345805] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[  109.522196] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[  110.579735] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-file for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[  110.874669] nvme nvme1: creating 1 I/O queues.
+[  110.882938] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[  110.890969] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-file", addr 127.0.0.1:4423, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[  135.727424] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-file"
+[  135.970524] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[  136.081595] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-passthru for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[  136.086304] nvme nvme1: creating 1 I/O queues.
+[  136.087468] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[  136.088540] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-passthru", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[  138.222176] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-passthru"
+[  138.339650] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[  138.449694] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-passthru for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[  138.452429] nvme nvme1: creating 1 I/O queues.
+[  138.453435] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[  138.454282] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-passthru", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[  140.486511] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-passthru"
+[  140.602840] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[  140.690106] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-passthru for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[  140.726608] nvme nvme1: creating 1 I/O queues.
+[  140.727865] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[  140.728841] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-passthru", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[  147.172819] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-passthru"
+[  147.290996] nvmet_tcp: enabling port 1 (127.0.0.1:4420)
+[  147.399206] nvmet: Created nvm controller 1 for subsystem nqn.2026-10.test:u3-passthru for NQN nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51.
+[  147.429878] nvme nvme1: creating 1 I/O queues.
+[  147.430897] nvme nvme1: mapped 1/0/0 default/read/poll queues.
+[  147.431822] nvme nvme1: new ctrl: NQN "nqn.2026-10.test:u3-passthru", addr 127.0.0.1:4420, hostnqn: nqn.2014-08.org.nvmexpress:uuid:24dfeb6b-c36b-439b-ac4f-0f3a75a1ee51
+[  149.434729] nvme nvme1: Removing ctrl: NQN "nqn.2026-10.test:u3-passthru"

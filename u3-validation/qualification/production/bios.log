@@ -1,0 +1,75 @@
+SeaBIOS (version 1.15.0-1)
+BUILD: gcc: (Ubuntu 11.2.0-13ubuntu1) 11.2.0 binutils: (GNU Binutils for Ubuntu) 2.37
+No Xen hypervisor found.
+Running on QEMU (q35)
+Found QEMU fw_cfg
+QEMU fw_cfg DMA interface supported
+qemu/e820: addr 0x0000000000000000 len 0x0000000080000000 [RAM]
+qemu/e820: addr 0x0000000100000000 len 0x0000000040000000 [RAM]
+Relocating init from 0x000d4ec0 to 0x7ffab660 (size 84224)
+Moving pm_base to 0x600
+boot order:
+1: /rom@genroms/linuxboot_dma.bin
+=== PCI bus & bridge init ===
+PCI: pci_bios_init_bus_rec bus = 0x0
+=== PCI device probing ===
+Found 5 PCI devices (max PCI bus is 00)
+PCIe: using q35 mmconfig at 0xb0000000
+=== PCI new allocation pass #1 ===
+PCI: check devices
+=== PCI new allocation pass #2 ===
+PCI: IO: c000 - c05f
+PCI: 32: 00000000c0000000 - 00000000fec00000
+PCI: map device bdf=00:1f.3  bar 4, addr 0000c000, size 00000040 [io]
+PCI: map device bdf=00:1f.2  bar 4, addr 0000c040, size 00000020 [io]
+PCI: map device bdf=00:01.0  bar 0, addr febf8000, size 00004000 [mem]
+PCI: map device bdf=00:1f.2  bar 5, addr febfc000, size 00001000 [mem]
+PCI: init bdf=00:00.0 id=8086:29c0
+PCI: init bdf=00:01.0 id=1b36:0010
+PCI: init bdf=00:1f.0 id=8086:2918
+Q35 LPC init: elcr=00 0c
+Using pmtimer, ioport 0x608
+PCI: init bdf=00:1f.2 id=8086:2922
+PCI: init bdf=00:1f.3 id=8086:2930
+PCI: No VGA devices found
+handle_smp: apic_id=0x1
+Found 2 cpu(s) max supported 2 cpu(s)
+Copying PIR from 0x7ffbfc00 to 0x000f5c80
+Copying MPTABLE from 0x00006d00/7ffa2280 to 0x000f5ba0
+Copying SMBIOS entry point from 0x00006c49 to 0x000f59f0
+table(50434146)=0x7ffe20a3 (via rsdt)
+ACPI: parse DSDT at 0x7ffe0040 (len 8291)
+Scan for VGA option rom
+No VGA found, scan for other display
+Turning on vga text mode console
+SeaBIOS (version 1.15.0-1)
+AHCI controller at 00:1f.2, iobase 0xfebfc000, irq 10
+PS2 keyboard initialized
+Searching bootorder for: HALT
+Found 0 lpt ports
+Found 1 serial ports
+Searching bootorder for: /pci@i0cf8/*@1
+All threads complete.
+Scan for option roms
+Running option rom at c000:0003
+Searching bootorder for: /rom@genroms/linuxboot_dma.bin
+Searching bootorder for: /rom@genroms/kvmvapic.bin
+Searching bootorder for: HALT
+drive 0x000f58e0: PCHS=0/0/0 translation=lba LCHS=130/16/63 s=131072
+Running option rom at c080:0003
+Space available for UMB: c3000-e8000, f5500-f58e0
+Returned 94208 bytes of ZoneHigh
+e820 map has 9 items:
+  0: 0000000000000000 - 000000000009fc00 = 1 RAM
+  1: 000000000009fc00 - 00000000000a0000 = 2 RESERVED
+  2: 00000000000f0000 - 0000000000100000 = 2 RESERVED
+  3: 0000000000100000 - 000000007ffd7000 = 1 RAM
+  4: 000000007ffd7000 - 0000000080000000 = 2 RESERVED
+  5: 00000000b0000000 - 00000000c0000000 = 2 RESERVED
+  6: 00000000fed1c000 - 00000000fed20000 = 2 RESERVED
+  7: 00000000fffc0000 - 0000000100000000 = 2 RESERVED
+  8: 0000000100000000 - 0000000140000000 = 1 RAM
+enter handle_19:
+  NULL
+Booting from ROM...
+Booting from c000:0054

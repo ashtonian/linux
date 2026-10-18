@@ -1,0 +1,11 @@
+{
+  "status": "Existing packaging defect observed; not modified by this NVMe candidate",
+  "source": "scripts/package/builddeb:154",
+  "source_matches_base": true,
+  "finding": "install_perf invokes dpkg-shlibdeps without the package-specific substvars output. The detected shlibs:Depends lands in debian/substvars; the package-specific file lacks it, and the final perf package has no Depends field.",
+  "control": "Package: linux-perf-truenas\nVersion: 6.18.55-production+truenas-1\nArchitecture: amd64\n",
+  "common_substvars": "shlibs:Depends=libc6 (>= 2.34), libcapstone4 (>= 4), libdw1 (>= 0.161), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1 (>= 2.0.11), libpfm4 (>= 4.9), libslang2 (>= 2.2.4), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.3.3)\n",
+  "package_substvars": "misc:Depends=\nmisc:Pre-Depends=\n",
+  "impact": "The local perf archive does not declare required shared libraries. Kernel image runtime tests do not validate this perf artifact or an appliance installation.",
+  "disposition": "Separate packaging follow-up; keep out of the NVMe PR."
+}

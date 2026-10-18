@@ -1,0 +1,26 @@
+{
+  "candidate": "9d9d9d7bd620d4c8ef6358e163ca78949e11c2f2",
+  "source_files": "Seven changed files match the exact candidate in both full package source trees.",
+  "variants": {
+    "production": {
+      "drivers/nvme/target/admin-cmd.c": "0d9c56358f2baa55550b86685c4288dd4de469e3af1b8aad753bf4ce53506436",
+      "drivers/nvme/target/configfs.c": "f288bec0a7b98baa637e53f5588bfe160070e1262549c09330a6515cac478ae9",
+      "drivers/nvme/target/core.c": "cf70cf414638029c6870757ad30dbb89716a0567345d511a8f3d24e0d997e989",
+      "drivers/nvme/target/nvmet.h": "a85814fbc29eb89ae56541aa65fe4f1514cc060eb5417c59c855093101f0ff6f",
+      "drivers/nvme/target/passthru.c": "28ce25a7b206fc8cc4d3fff49235e4fa22228dc1e9afc8b09e126ed168755eff",
+      "drivers/nvme/target/tcp.c": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+      "drivers/nvme/target/zns.c": "2ad25834d3da790afbda6ae62e8a4cbfd65d11f22760fe4c466966e5cce84c38",
+      ".config": "5b18df69b2d7c966fe638ee2ddef1532acd4dbc51b8b9a059d1a7aa3b5cce93d"
+    },
+    "debug": {
+      "drivers/nvme/target/admin-cmd.c": "0d9c56358f2baa55550b86685c4288dd4de469e3af1b8aad753bf4ce53506436",
+      "drivers/nvme/target/configfs.c": "f288bec0a7b98baa637e53f5588bfe160070e1262549c09330a6515cac478ae9",
+      "drivers/nvme/target/core.c": "cf70cf414638029c6870757ad30dbb89716a0567345d511a8f3d24e0d997e989",
+      "drivers/nvme/target/nvmet.h": "a85814fbc29eb89ae56541aa65fe4f1514cc060eb5417c59c855093101f0ff6f",
+      "drivers/nvme/target/passthru.c": "28ce25a7b206fc8cc4d3fff49235e4fa22228dc1e9afc8b09e126ed168755eff",
+      "drivers/nvme/target/tcp.c": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+      "drivers/nvme/target/zns.c": "2ad25834d3da790afbda6ae62e8a4cbfd65d11f22760fe4c466966e5cce84c38",
+      ".config": "5a9bb98fc7050c1f200048c0f4dc2e112e63dc045b899179a4c8e8de603fedf9"
+    }
+  }
+}

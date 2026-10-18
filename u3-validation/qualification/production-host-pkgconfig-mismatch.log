@@ -1,0 +1,11 @@
+  HOSTCC  scripts/sign-file
+/usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libcrypto.so when searching for -lcrypto
+/usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libcrypto.a when searching for -lcrypto
+/usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 when searching for libgcc_s.so.1
+/usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libc.so when searching for -lc
+/usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libc.a when searching for -lc
+/usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 when searching for libgcc_s.so.1
+collect2: error: ld returned 1 exit status
+make[2]: *** [scripts/Makefile.host:114: scripts/sign-file] Error 1
+make[1]: *** [/work/package-production/Makefile:1296: scripts] Error 2
+make: *** [Makefile:251: __sub-make] Error 2

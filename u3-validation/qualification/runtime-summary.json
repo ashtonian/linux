@@ -1,0 +1,122 @@
+{
+  "candidate": "9d9d9d7bd620d4c8ef6358e163ca78949e11c2f2",
+  "production": {
+    "status": "PASS",
+    "result_records": 36,
+    "report": "production/results/results.json",
+    "kernel": "6.18.55-production+truenas",
+    "image_package": "linux-image-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb",
+    "image_sha256": "3a0cf2e77a53d8ac85982a6b67d089d58f8bea9e5e0586cae579d041cbc2c829",
+    "initramfs_sha256": "65d8aef322159008d48773b4d29e5568a8e811f3869dabfba569c362bfa31c53",
+    "script_sha256": {
+      "boot-package.sh": "443abaab7b8dc7c66bd474bdf9b6df2721b438d73747ba6fc504a8aba85f3068",
+      "build-packages.sh": "0ad6d5cd7e5d87cadd2cbe0573bbd0dfc181eb1ba488a1a21b59d50e12ce65ab",
+      "collect-packages.py": "e4963e6783ce1b0318c8950737bea384df4647c4591512204b4c3a6c846e3c59",
+      "dpkg-deb-local": "d5268589861210be9ae4b9a326f8f95071bbe58d6aa1c878085ce6cca5a34514",
+      "extract-guest-results.py": "b15cb96efcb9e249cd72b02ed1159ac87dc49ff1eb974fd7d839dfe5783eceac",
+      "guest-init.sh": "8a3073af875caea9ea87ab0c55bc3126125fc8e1241db97464a38b2e0ee3f636",
+      "guest_checks.py": "4f953983dfb4472c6d5c0e351d53c490c18a4f15dfec3404698ed6e995be7441",
+      "pdu_proxy.py": "e53e32ad8f1eede4285b02143f198fd82674df2a507d3c7c48e77f138c269d29",
+      "prepare-package-configs.sh": "6f139477938ce8a18f30ed4a381c2147551ca96e3b2b23fb031796c3c6fcf06b",
+      "trim-guest-modules.py": "cdc38cdd92c7e3894338628e4485df80d6c3179c47d87957c11610e0fb808171"
+    },
+    "wire_checks": [
+      {
+        "test": "wire_evidence_spec",
+        "status": "PASS",
+        "split_pdus": 8,
+        "expected_fragments": [
+          1000,
+          2000,
+          8192,
+          1096
+        ],
+        "largest_write": 1048576
+      },
+      {
+        "test": "wire_evidence_page",
+        "status": "PASS",
+        "split_pdus": 8,
+        "expected_fragments": [
+          512,
+          4096,
+          7680
+        ],
+        "largest_write": 1048576
+      },
+      {
+        "test": "wire_configured_256k",
+        "status": "PASS",
+        "commands": 8,
+        "largest_write": 262144,
+        "total_bytes": 2097152
+      }
+    ]
+  },
+  "debug": {
+    "status": "PASS",
+    "result_records": 36,
+    "report": "debug/results/results.json",
+    "kernel": "6.18.55-debug+truenas",
+    "image_package": "linux-image-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb",
+    "image_sha256": "f27bd3765451d851ea03aeb54cb0eecf982385a4b919c730a12bcc2fb43585d1",
+    "initramfs_sha256": "34dd8e964375a210b22c469a34fdce096d0db063a1444bf1bc07da07e65f90ce",
+    "script_sha256": {
+      "boot-package.sh": "443abaab7b8dc7c66bd474bdf9b6df2721b438d73747ba6fc504a8aba85f3068",
+      "build-packages.sh": "0ad6d5cd7e5d87cadd2cbe0573bbd0dfc181eb1ba488a1a21b59d50e12ce65ab",
+      "collect-packages.py": "e4963e6783ce1b0318c8950737bea384df4647c4591512204b4c3a6c846e3c59",
+      "dpkg-deb-local": "d5268589861210be9ae4b9a326f8f95071bbe58d6aa1c878085ce6cca5a34514",
+      "extract-guest-results.py": "b15cb96efcb9e249cd72b02ed1159ac87dc49ff1eb974fd7d839dfe5783eceac",
+      "guest-init.sh": "8a3073af875caea9ea87ab0c55bc3126125fc8e1241db97464a38b2e0ee3f636",
+      "guest_checks.py": "4f953983dfb4472c6d5c0e351d53c490c18a4f15dfec3404698ed6e995be7441",
+      "pdu_proxy.py": "e53e32ad8f1eede4285b02143f198fd82674df2a507d3c7c48e77f138c269d29",
+      "prepare-package-configs.sh": "6f139477938ce8a18f30ed4a381c2147551ca96e3b2b23fb031796c3c6fcf06b",
+      "trim-guest-modules.py": "cdc38cdd92c7e3894338628e4485df80d6c3179c47d87957c11610e0fb808171"
+    },
+    "wire_checks": [
+      {
+        "test": "wire_evidence_spec",
+        "status": "PASS",
+        "split_pdus": 8,
+        "expected_fragments": [
+          1000,
+          2000,
+          8192,
+          1096
+        ],
+        "largest_write": 1048576
+      },
+      {
+        "test": "wire_evidence_page",
+        "status": "PASS",
+        "split_pdus": 8,
+        "expected_fragments": [
+          512,
+          4096,
+          7680
+        ],
+        "largest_write": 1048576
+      },
+      {
+        "test": "wire_configured_256k",
+        "status": "PASS",
+        "commands": 9,
+        "largest_write": 262144,
+        "total_bytes": 2097152
+      }
+    ]
+  },
+  "observations": [
+    "Configured MDTS exponent 1 advertises 8192 bytes; Linux disables ANA because the 8208-byte ANA log exceeds this limit.",
+    "At configured 256 KiB, the final production run split a 2 MiB direct write into eight 262144-byte commands. The initial run split it into nine commands; both preserved total bytes and the limit.",
+    "No oops, panic, kernel WARNING, KASAN or UBSAN report in the successful production guest log.",
+    "Both final guest logs contain no kernel WARNING, oops, panic, KASAN or UBSAN report. Invalid/active configuration messages and the low-MDTS ANA limitation are expected."
+  ],
+  "limits": [
+    "Isolated QEMU/TCG guest; no physical hardware or complete TrueNAS image.",
+    "No TLS, pressure, durability, fencing, performance benchmark or aggregate memory-budget qualification.",
+    "Existing 4 MiB allocation guard is covered by offline tests; no new live guard-boundary test.",
+    "The existing perf package dependency metadata defect is recorded in perf-packaging-limitation.json."
+  ],
+  "recorded_at_utc": "2026-10-18T10:11:17.544915+00:00"
+}

@@ -1,0 +1,96 @@
+{"listen": 4423, "pattern": "page", "target": 4420, "type": "ready"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 1024, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 2, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 2, "sgl_length": 8208, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 8208, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 2, "sgl_length": 512, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 512, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 9, "sgl_length": 0, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 127, "sgl_length": 1024, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 9, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 12, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 2, "sgl_length": 8208, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 8208, "type": "read_data"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 4096, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 4096, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 6, "sgl_length": 4096, "type": "command"}
+{"connection": 1, "data_digest": true, "header_digest": true, "length": 4096, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 1, "sgl_length": 262144, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 4, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 3, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 4101, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 4102, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 7, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 8, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 9, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"cid": 10, "data_digest": true, "header_digest": true, "lengths": [512, 4096, 257536], "offset": 0, "original_length": 262144, "type": "split"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 122880, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 262144, "type": "command"}
+{"connection": 2, "direction": "h2c", "opcode": 2, "sgl_length": 139264, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 122880, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 24, "sgl_length": 0, "type": "command"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 262144, "type": "read_data"}
+{"connection": 2, "data_digest": true, "header_digest": true, "length": 139264, "type": "read_data"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 1, "direction": "h2c", "opcode": 127, "sgl_length": 0, "type": "command"}
+{"connection": 2, "type": "connection_closed"}
+{"connection": 1, "type": "connection_closed"}

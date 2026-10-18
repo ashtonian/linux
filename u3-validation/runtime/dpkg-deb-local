@@ -1,0 +1,8 @@
+#!/bin/sh
+# Bound compression time in the disposable Ubuntu 22.04 builder.
+for argument in "$@"; do
+    case "$argument" in
+        --build|-b) exec /usr/bin/dpkg-deb -z1 "$@" ;;
+    esac
+done
+exec /usr/bin/dpkg-deb "$@"

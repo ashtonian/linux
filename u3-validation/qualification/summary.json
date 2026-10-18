@@ -1,0 +1,19 @@
+{
+  "candidate": "9d9d9d7bd620d4c8ef6358e163ca78949e11c2f2",
+  "recorded_at_utc": "2026-10-18T10:11:17.544915+00:00",
+  "production_build": "PASS: binary package recipe exit 0; five packages",
+  "debug_build": "PASS: bindeb-pkg exit 0; four packages",
+  "production_vm": "PASS: 36 result records",
+  "debug_vm": "PASS: 36 result records, UBSan bounds/shift enabled",
+  "input_verification": "All seven changed source hashes match the candidate; both config hashes match the independent CI-fragment merges; booted image hashes match final packages and build bzImages.",
+  "archive_encoding": "gzip level 1 via recorded local dpkg-deb wrapper",
+  "package_manifest": "packages.json",
+  "runtime_manifest": "runtime-summary.json",
+  "limitations": [
+    "Isolated QEMU/TCG guest; no physical hardware or complete TrueNAS image.",
+    "No TLS, pressure, durability, fencing, performance benchmark or aggregate memory-budget qualification.",
+    "Existing 4 MiB allocation guard is covered by offline tests; no new live guard-boundary test.",
+    "The existing perf package dependency metadata defect is recorded in perf-packaging-limitation.json."
+  ],
+  "upstream_pr_opened": false
+}

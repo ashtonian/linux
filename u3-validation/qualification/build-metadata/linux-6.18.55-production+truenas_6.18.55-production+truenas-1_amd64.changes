@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Sun, 18 Oct 2026 09:44:37 +0000
+Source: linux-6.18.55-production+truenas
+Binary: linux-headers-truenas-production-amd64 linux-image-truenas-production-amd64 linux-image-truenas-production-amd64-dbg linux-perf-truenas linux-truenas-production-libc-dev
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 6.18.55-production+truenas-1
+Distribution: sid
+Urgency: low
+Maintainer: Debian Packages List <debian.packages@ixsystems.com>
+Changed-By: Debian Packages List <debian.packages@ixsystems.com>
+Description:
+ linux-headers-truenas-production-amd64 - Linux kernel headers for 6.18.55-production+truenas on amd64
+ linux-image-truenas-production-amd64 - Linux kernel, version 6.18.55-production+truenas
+ linux-image-truenas-production-amd64-dbg - Linux kernel debugging symbols for 6.18.55-production+truenas
+ linux-perf-truenas - Performance analysis tools for Linux 6.18.55-production+truenas
+ linux-truenas-production-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-6.18.55-production+truenas (6.18.55-production+truenas-1) sid; urgency=low
+ .
+   * Build TrueNAS production kernel
+Checksums-Sha1:
+ acb1da989403c194b97581195a4e81a52f51ce6a 9787 linux-6.18.55-production+truenas_6.18.55-production+truenas-1_amd64.buildinfo
+ 731cc7df4d308e28c53ac3a2498084831b1035a0 16479884 linux-headers-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+ ca1004e4d978e1281afef88c76eaf5ec5f7a8624 2149833764 linux-image-truenas-production-amd64-dbg_6.18.55-production+truenas-1_amd64.deb
+ 0845681ae0ef75dc989acd754a8321ff05cb5db2 142318536 linux-image-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+ 6aa979696cc2f753c88ea021740c85f39273bb83 3270464 linux-perf-truenas_6.18.55-production+truenas-1_amd64.deb
+ 545f1e03f435f4993fa277a742a424921adf6084 2294634 linux-truenas-production-libc-dev_6.18.55-production+truenas-1_amd64.deb
+Checksums-Sha256:
+ 0b25dfe1d212a2d8cd5880c62dbea9a6bf0ec7b55b6c35ce5766e5eb4bec54f9 9787 linux-6.18.55-production+truenas_6.18.55-production+truenas-1_amd64.buildinfo
+ d9dc69a1321c714da9e854668b9f266d37d20b6e20409414c2359c1b1c44a838 16479884 linux-headers-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+ a244125ee3ad987de659edab6d20aade3e38ee054e10741d3530a22ed15b92f8 2149833764 linux-image-truenas-production-amd64-dbg_6.18.55-production+truenas-1_amd64.deb
+ 3a0cf2e77a53d8ac85982a6b67d089d58f8bea9e5e0586cae579d041cbc2c829 142318536 linux-image-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+ 4a7426630a075a75d63253fae23713b937e34149f164de1994ef687e7accb0c7 3270464 linux-perf-truenas_6.18.55-production+truenas-1_amd64.deb
+ 75246b2f46f065a7f95f0687a1d65f0367a873c83ced7f0cf46903cd40015ac1 2294634 linux-truenas-production-libc-dev_6.18.55-production+truenas-1_amd64.deb
+Files:
+ 1e61c4a6c4cf8c82e9035f9dbb87f9af 9787 kernel optional linux-6.18.55-production+truenas_6.18.55-production+truenas-1_amd64.buildinfo
+ a2fae4858a52ec9e33363c654c8483b1 16479884 kernel optional linux-headers-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+ 8c3dd49bcaaac69ccdc80ed030d6e60a 2149833764 debug optional linux-image-truenas-production-amd64-dbg_6.18.55-production+truenas-1_amd64.deb
+ fcde099053b9aee3e9435e1669fa87fb 142318536 kernel optional linux-image-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb
+ b1e18737b00b9196f612b618301486d1 3270464 kernel optional linux-perf-truenas_6.18.55-production+truenas-1_amd64.deb
+ f8f80c51342815099f1801878af9ebfc 2294634 devel optional linux-truenas-production-libc-dev_6.18.55-production+truenas-1_amd64.deb

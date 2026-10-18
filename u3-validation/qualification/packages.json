@@ -1,0 +1,94 @@
+{
+  "candidate": "9d9d9d7bd620d4c8ef6358e163ca78949e11c2f2",
+  "base": "e43b65255bec4614c14447eb6152711e3e6e8124",
+  "builder": "Ubuntu 22.04/aarch64, cross-compiling x86_64",
+  "archive_compression": "KDEB_COMPRESS=gzip; dpkg-deb-local sets build level 1",
+  "compiler": "x86_64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "packages": [
+    {
+      "file": "linux-headers-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb",
+      "bytes": 16477384,
+      "sha256": "06cdae7ed60046040c9619a047cd0bfbadd8f6b26e8635e9422f2421a4471a26",
+      "control": "Package: linux-headers-truenas-debug-amd64\nVersion: 6.18.55-debug+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-headers-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb",
+      "bytes": 16479884,
+      "sha256": "d9dc69a1321c714da9e854668b9f266d37d20b6e20409414c2359c1b1c44a838",
+      "control": "Package: linux-headers-truenas-production-amd64\nVersion: 6.18.55-production+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-image-truenas-debug-amd64-dbg_6.18.55-debug+truenas-1_amd64.deb",
+      "bytes": 2149710152,
+      "sha256": "e7cda37d7728e83e117c6823febb04bf1fa9e9c40f4995da896bb5e9927a8058",
+      "control": "Package: linux-image-truenas-debug-amd64-dbg\nVersion: 6.18.55-debug+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-image-truenas-debug-amd64_6.18.55-debug+truenas-1_amd64.deb",
+      "bytes": 142262334,
+      "sha256": "f27bd3765451d851ea03aeb54cb0eecf982385a4b919c730a12bcc2fb43585d1",
+      "control": "Package: linux-image-truenas-debug-amd64\nVersion: 6.18.55-debug+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-image-truenas-production-amd64-dbg_6.18.55-production+truenas-1_amd64.deb",
+      "bytes": 2149833764,
+      "sha256": "a244125ee3ad987de659edab6d20aade3e38ee054e10741d3530a22ed15b92f8",
+      "control": "Package: linux-image-truenas-production-amd64-dbg\nVersion: 6.18.55-production+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-image-truenas-production-amd64_6.18.55-production+truenas-1_amd64.deb",
+      "bytes": 142318536,
+      "sha256": "3a0cf2e77a53d8ac85982a6b67d089d58f8bea9e5e0586cae579d041cbc2c829",
+      "control": "Package: linux-image-truenas-production-amd64\nVersion: 6.18.55-production+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-perf-truenas_6.18.55-production+truenas-1_amd64.deb",
+      "bytes": 3270464,
+      "sha256": "4a7426630a075a75d63253fae23713b937e34149f164de1994ef687e7accb0c7",
+      "control": "Package: linux-perf-truenas\nVersion: 6.18.55-production+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-truenas-debug-libc-dev_6.18.55-debug+truenas-1_amd64.deb",
+      "bytes": 2294628,
+      "sha256": "9b459079795173ad105605288cde68fec50de7fa3e90a205fd827b4e7b16106d",
+      "control": "Package: linux-truenas-debug-libc-dev\nVersion: 6.18.55-debug+truenas-1\nArchitecture: amd64"
+    },
+    {
+      "file": "linux-truenas-production-libc-dev_6.18.55-production+truenas-1_amd64.deb",
+      "bytes": 2294634,
+      "sha256": "75246b2f46f065a7f95f0687a1d65f0367a873c83ced7f0cf46903cd40015ac1",
+      "control": "Package: linux-truenas-production-libc-dev\nVersion: 6.18.55-production+truenas-1\nArchitecture: amd64"
+    }
+  ],
+  "variants": {
+    "production": {
+      "exit_status": 0,
+      "config_sha256": "5b18df69b2d7c966fe638ee2ddef1532acd4dbc51b8b9a059d1a7aa3b5cce93d",
+      "kernel_sha256": "f53a0de1cea2a68f02324345cc1d66b2599fd51667942f8f0e111beef5ba8350",
+      "source_sha256": {
+        "drivers/nvme/target/admin-cmd.c": "0d9c56358f2baa55550b86685c4288dd4de469e3af1b8aad753bf4ce53506436",
+        "drivers/nvme/target/configfs.c": "f288bec0a7b98baa637e53f5588bfe160070e1262549c09330a6515cac478ae9",
+        "drivers/nvme/target/core.c": "cf70cf414638029c6870757ad30dbb89716a0567345d511a8f3d24e0d997e989",
+        "drivers/nvme/target/nvmet.h": "a85814fbc29eb89ae56541aa65fe4f1514cc060eb5417c59c855093101f0ff6f",
+        "drivers/nvme/target/passthru.c": "28ce25a7b206fc8cc4d3fff49235e4fa22228dc1e9afc8b09e126ed168755eff",
+        "drivers/nvme/target/tcp.c": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+        "drivers/nvme/target/zns.c": "2ad25834d3da790afbda6ae62e8a4cbfd65d11f22760fe4c466966e5cce84c38"
+      }
+    },
+    "debug": {
+      "exit_status": 0,
+      "config_sha256": "5a9bb98fc7050c1f200048c0f4dc2e112e63dc045b899179a4c8e8de603fedf9",
+      "kernel_sha256": "8b69290a510e0f8334a9b677a40e99725cee8533408fcc0b0276f2a5b277482b",
+      "source_sha256": {
+        "drivers/nvme/target/admin-cmd.c": "0d9c56358f2baa55550b86685c4288dd4de469e3af1b8aad753bf4ce53506436",
+        "drivers/nvme/target/configfs.c": "f288bec0a7b98baa637e53f5588bfe160070e1262549c09330a6515cac478ae9",
+        "drivers/nvme/target/core.c": "cf70cf414638029c6870757ad30dbb89716a0567345d511a8f3d24e0d997e989",
+        "drivers/nvme/target/nvmet.h": "a85814fbc29eb89ae56541aa65fe4f1514cc060eb5417c59c855093101f0ff6f",
+        "drivers/nvme/target/passthru.c": "28ce25a7b206fc8cc4d3fff49235e4fa22228dc1e9afc8b09e126ed168755eff",
+        "drivers/nvme/target/tcp.c": "31bde7b59137a75b97f17c7ea20980223c1711aaf08e89fdee313bf615fa94e5",
+        "drivers/nvme/target/zns.c": "2ad25834d3da790afbda6ae62e8a4cbfd65d11f22760fe4c466966e5cce84c38"
+      }
+    }
+  },
+  "limitations": "Local cross-build, not hosted CI or a TrueNAS appliance image. See perf-build-options.txt for optional perf capabilities."
+}
